@@ -74,8 +74,8 @@
 {{--                                </li>--}}
                                 <li><a href="#clases">Sobre las clases</a>
                                 </li>
-                                <li><a href="#docentes">Nuestros Docentes</a>
-                                </li>
+{{--                                <li><a href="#docentes">Nuestros Docentes</a>--}}
+{{--                                </li>--}}
                                 <li><a href="#horarios">Horarios por grupos</a>
                                 <li><a href="#faq">Preguntas Frecuentes</a>
                                 <li><a href="#oficinas">Oficina</a>
@@ -361,7 +361,7 @@
 <!-- End Event Banner Wrapper -->
 
 <!--== Start Event Speaker Wrapper ==-->
-<section class="event-speaker-wrapper mt-120 pb-5 mt-md-80 mt-sm-60" id="docentes">
+<section class="event-speaker-wrapper d-none mt-120 pb-5 mt-md-80 mt-sm-60" id="docentes">
     <div class="container">
         <div class="row mb-5">
             <!-- Start Section title -->
