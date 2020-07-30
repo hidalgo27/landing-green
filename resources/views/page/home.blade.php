@@ -114,7 +114,7 @@
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
                     <div class="single-fun-fact-wrap layout--2 text-white">
                         <span>Faltan</span>
-                        <p class="fun-fact-number"><span class="odometer text-white" data-count="5"></span>
+                        <p class="fun-fact-number"><span class="odometer text-white" data-count="4"></span>
                             <small class="text-white">Días</small>
                         </p>
 
