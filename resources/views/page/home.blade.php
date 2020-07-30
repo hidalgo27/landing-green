@@ -21,6 +21,7 @@
     <link href="{{asset('assets/css/vendor.css')}}" rel="stylesheet">
     <!--=== Main Style CSS ===-->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <!-- Modernizer JS -->
     <script src="{{asset('assets/js/modernizr.min.js')}}"></script>
@@ -33,7 +34,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=2238600679714980&autoLogAppEvents=1" nonce="S9QfEn1n"></script>
 </head>
 
-<body class="preloader-active">
+<body class="preloader-">
 
 <!--== Scroll to top ==-->
 <a href="javascript:void(0)" class="scroll-top"><i class="fa fa-angle-up"></i></a>
@@ -76,7 +77,7 @@
                                 <li><a href="#docentes">Nuestros Docentes</a>
                                 </li>
                                 <li><a href="#horarios">Horarios por grupos</a>
-
+                                <li><a href="#faq">Preguntas Frecuentes</a>
                                 <li><a href="#oficinas">Oficina</a>
                                 </li>
                             </ul>
@@ -108,6 +109,7 @@
             <div class="col-md-6 my-auto">
                 <!-- Start Hero Banner Content -->
                 <div class="hero-content-wrap text-center text-md-left landing-nav">
+                    <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
                     <h2>Inicio 3 de Agosto <span class="d-block">15 días gratis</span></h2>
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
                     <div class="single-fun-fact-wrap layout--2 text-white">
@@ -127,28 +129,39 @@
 
             <div class="col-xl-5 col-md-6 my-auto ml-auto">
                 <!-- Start Event Registration Area -->
-                <div class="event-registration-wrapper mt-sm-50">
-                    <h3>Registrarse para clases gratis</h3>
+                @if (session('status'))
+                    <div class="bg-primary p-3 text-white">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                <div class="event-registration-wrapper py-5 text-center mt-sm-50">
+                    <h3 class="mb-0">Registrarse para clases gratis</h3>
+                    <span class="text-center py-3 d-block">Sin trucos, sin pagos</span>
 
                     <div class="registration-form">
-                        <form action="#" method="post">
+
+
+                        <form action="{{route('form_free_path')}}" method="post">
+                            @csrf
                             <div class="single-input-item">
-                                <input type="text" placeholder="Nombre Completo" />
+                                <input type="text" name="name" placeholder="Nombre Completo" required/>
                             </div>
 
                             <div class="single-input-item">
-                                <input type="email" placeholder="Email" />
+                                <input type="email" name="email" placeholder="Email" required/>
                             </div>
 
                             <div class="single-input-item">
-                                <input type="text" placeholder="Numero de celular" />
+                                <input type="tel" name="cel" placeholder="Numero de celular (whatsapp)" required/>
                             </div>
 
                             <div class="single-input-item">
-                                <button class="btn btn-brand w-100">Register Now</button>
+                                <button type="submit" class="btn btn-brand w-100">Registrame ahora</button>
                             </div>
                         </form>
                     </div>
+                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
+                        Si deseas inscribirte en ese momento el costo sera de S/99 mensuales o S/198 x 3 meses </small>
                 </div>
             </div>
         </div>
@@ -165,7 +178,7 @@
                 <div class="section-title-wrap layout--2">
                     <i class="fa fa-microphone"></i>
                     <h2>Sobre las clases</h2>
-                    <p class="mb-0">Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer.</p>
+                    <p class="mb-0">Pasar a la universidad nunca fue tan sencillo y desde la comodidad de tu casa.</p>
                 </div>
             </div>
             <!-- End Section title -->
@@ -196,7 +209,12 @@
 
                             <div id="collapseOne" class="collapse show" data-parent="#eventAboutAccordion">
                                 <div class="card-body">
-                                    <p>Keytar DIY cred thundercats direct trade viral umami, fanny pack ugh authen shabby chic chartreuse. Lo-fi roof party.Lorem ipsum dolor sit amet, ut vidis commune scriptorem. Ad his suavitate com plectitur ruis dicant</p>
+                                    <p class="mb-4">Somos GREEN, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA)
+                                        Nuestra metodología online te permitirá desarrollar todo vuestro potencial y aprender de una manera dinámica.
+                                    </p>
+                                    <div class="alert alert-success pt-4 d-block">
+                                        GREEN y tu juntos para tener luz verde para tu ingreso!
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +224,7 @@
                             <div class="card-header" id="headingTwo">
                                 <h3 data-toggle="collapse" data-target="#collapseTwo">
 
-                                    Workshops
+                                    Preguntas Frecuentes
 
                                     <span class="icons">
 
@@ -220,34 +238,41 @@
                             </div>
                             <div id="collapseTwo" class="collapse" data-parent="#eventAboutAccordion">
                                 <div class="card-body">
-                                    <p>Keytar DIY cred thundercats direct trade viral umami, fanny pack ugh authen shabby chic chartreuse. Lo-fi roof party.Lorem ipsum dolor sit amet, ut vidis commune scriptorem. Ad his suavitate</p>
+                                    <p>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
+                                        Si deseas inscribirte en ese momento el costo será de S/99 mensuales o S/198 x 3 meses
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="#faq" class="btn btn-bordered">Ver más</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Start Event Accordion #03 -->
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h3 data-toggle="collapse" data-target="#collapseThree">
+{{--                        <div class="card">--}}
+{{--                            <div class="card-header" id="headingThree">--}}
+{{--                                <h3 data-toggle="collapse" data-target="#collapseThree">--}}
 
-                                    Sponsor Information
+{{--                                    Sponsor Information--}}
 
-                                    <span class="icons">
+{{--                                    <span class="icons">--}}
 
-                                        <i class="fa fa-plus"></i>
+{{--                                        <i class="fa fa-plus"></i>--}}
 
-                                        <i class="fa fa-minus"></i>
+{{--                                        <i class="fa fa-minus"></i>--}}
 
-                                    </span>
+{{--                                    </span>--}}
 
-                                </h3>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-parent="#eventAboutAccordion">
-                                <div class="card-body">
-                                        <p>Keytar DIY cred thundercats direct trade viral umami, fanny pack ugh authen shabby chic chartreuse. Lo-fi roof party.Lorem ipsum dolor sit amet, ut vidis commune scriptorem.</p>
-                                </div>
-                            </div>
-                        </div>
+{{--                                </h3>--}}
+{{--                            </div>--}}
+{{--                            <div id="collapseThree" class="collapse" data-parent="#eventAboutAccordion">--}}
+{{--                                <div class="card-body">--}}
+{{--                                        <p>Keytar DIY cred thundercats direct trade viral umami, fanny pack ugh authen shabby chic chartreuse. Lo-fi roof party.Lorem ipsum dolor sit amet, ut vidis commune scriptorem.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -603,6 +628,240 @@
 {{--        </div>--}}
     </div>
 </section>
+
+<section id="faq">
+    <div class="accordion-content-wrapper mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
+        <div class="container">
+            <div class="row mb-5">
+                <!-- Start Section title -->
+                <div class="col-lg-6 m-auto text-center">
+                    <div class="section-title-wrap layout--2">
+                        <i class="fa fa-list"></i>
+                        <h2>Preguntas Frecuentes</h2>
+                    </div>
+                </div>
+                <!-- End Section title -->
+            </div>
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <!-- Start Accordion Element #01 -->
+                    <div class="accordion-element-1">
+                        <div class="restaurant-why-us-accordion" id="accordionOne">
+                            <!-- Start Accordion item #01 -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+
+                                        <span>01.</span> ¿Cómo puedo inscribirme?
+
+                                    </h3>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Contáctanos vía whatsapp de 8am a 8pm para que un representante pueda asistirte o también te invitamos a visitarnos en nuestra sede central en Cusco.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #02 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h3 data-toggle="collapse" data-target="#collapseTwo">
+
+                                        <span>02.</span>¿Que grupos enseñamos?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Actualmente abarcamos todos los grupos A-B-C-D (UNSAAC)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #03 -->
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h3 data-toggle="collapse" data-target="#collapseThree">
+
+                                        <span>03.</span> ¿Cuales son los horarios?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Las clases son desde 8.30am a 6.00pm.
+                                            Al cambiar los horarios cada semestre solicitamos por favor contactar a vuestro asesor educativo GREEN para obtener el horario mas actualizado según vuestro grupo. (999 200 117).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #04 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 04.</span> ¿Cuales son los costos?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>S/99 soles mensuales y también contamos con una promoción x tiempo limitado: 2x3 : paga 2 meses y estudia 3 meses, abonando S/198 podrás acceder a 3 meses de clases.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #05 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 05.</span> Cómo funcionan las clases
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Vía online; nuestros estudiantes reciben los accesos respectivos de nuestras clases en vivo las cuales se desarrollan desde nuestra sede central.
+                                            Igualmente brindamos ejercicios y exámenes simulacros de admisión.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #06 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 06.</span> ¿Cuentan con primera opción?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Por el momento solo Ordinario.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #07 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 07.</span> ¿Hay un acompañamiento fuera de las clases sobre los temas vistos?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>A cada alumno se le asignará un asesor el cual realizará un acompañamiento personalizado tanto con el estudiante como con sus padres.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #08 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 08.</span> En caso de perder una clase por x motivo. ¿Tengo opción a recuperarla? Si es así, ¿mediante qué medio?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Afirmativo, si un estudiante pierde una clase deberá contactar a su asesor para solicitar el acceso de la clase a recuperar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #09 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 09.</span> ¿Cuál debería ser mi calidad de conexión a internet?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>velocidad que permita ver videos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #10 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 10.</span> Las dudas al profesor, aparte de las clases en vivo; ¿por donde puedo resolverlas?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Cada profesor cuenta con horas de atención para consultas por favor coordinar con su Asesor la comunicación con el profesor deseado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #11 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 11.</span> ¿Cuanto duran las clases?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>El ciclo dura 3 meses.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Accordion item #12 -->
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                        <span> 12.</span> ¿Existen descuentos para miembros de una misma familia?
+
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                    <div class="card-body">
+                                        <p>Afirmativo, por favor contáctanos para una cotización personalizada.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- End Accordion Element #01 -->
+
+                </div>
+            </div>
+        </div>
+</section>
 <!--== End Event Schedule Wrapper ==-->
 <section class="">
 
@@ -705,20 +964,19 @@
             <div class="col-lg-7 m-auto">
                 <div class="newsletter-content">
                     <div class="newsletter-form-wrap layout--2">
-                        <form action="https://company.us19.list-manage.com/subscribe/post?u=2f2631cacbe4767192d339ef2&amp;id=24db23e68a" method="post" id="mc-form" class="mc-form d-sm-flex">
-                            <input type="email" id="mc-email" placeholder="Ingrese su email" required/>
-                            <button class="btn-newsletter">Subscribe</button>
+                        <form action="{{route('form_suscripcion_path')}}" method="post" class="mc-form d-sm-flex">
+                            @csrf
+                            <input type="email" name="email"  placeholder="Ingrese su email" required/>
+                            <button class="btn-newsletter" type="submit">Subscribe</button>
                         </form>
-
-                        <!-- MailChimp Alerts Start -->
-                        <div class="mailchimp-alerts text-centre">
-                            <div class="mailchimp-submitting"></div>
-                            <div class="mailchimp-success"></div>
-                            <div class="mailchimp-error"></div>
-                        </div>
-                        <!-- MailChimp Alerts End -->
                     </div>
                 </div>
+
+                @if (session('suscripcion'))
+                    <div class="bg-primary p-3 text-white">
+                        {{ session('suscripcion') }}
+                    </div>
+                @endif
             </div>
         </div>
     </div>

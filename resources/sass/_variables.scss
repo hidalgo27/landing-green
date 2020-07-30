@@ -17,3 +17,13 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+
+
+$g-green:    #aeea00 !default;
+
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    "g-green": $g-green,
+), $theme-colors);

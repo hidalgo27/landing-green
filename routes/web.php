@@ -23,11 +23,17 @@ Route::get('/', [
     'as' => 'home_path',
 ]);
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('form/free', [
+    'uses' => 'Page\HomepageController@form_free',
+    'as' => 'form_free_path',
+]);
+
+Route::post('form/suscripcion', [
+    'uses' => 'Page\HomepageController@suscipcion',
+    'as' => 'form_suscripcion_path',
+]);
