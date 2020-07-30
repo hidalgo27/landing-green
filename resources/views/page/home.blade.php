@@ -1012,7 +1012,7 @@
                             </div>
 
                             <div class="con-method-item">
-                                <p><i class="fa fa-phone"></i>  <a href="tel:66668888">T / (102) 6666 8888</a>
+                                <p><i class="fa fa-phone"></i>  <a href="tel:66668888">951 783 755</a>
                                 </p>
                             </div>
 
