@@ -13,6 +13,10 @@ class HomepageController extends Controller
     }
     public function form_free(Request $request){
 
+        $validatedData = $request->validate([
+            'email' => 'required|unique:talumnos',
+        ]);
+
         $alumnos = new TAlumno();
         $alumnos->nombre = $request->input('name');
         $alumnos->email = $request->input('email');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\TAlumno;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +26,9 @@ class HomeController extends Controller
     {
         $request->user()->authorizeRoles(['user', 'admin']);
 
-        return view('home');
+        $alumno = TAlumno::all();
+
+        return view('home', compact('alumno'));
     }
+
 }

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">Alumnos para el 03 de agosto | Gratis</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,29 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+{{--                    {{ __('You are logged in!') }}--}}
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Celular</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($alumno as $alumnos)
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>{{$alumnos->nombre}}</td>
+                                <td>{{$alumnos->email}}</td>
+                                <td>{{$alumnos->telefono}}</td>
+                            </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+
                 </div>
             </div>
         </div>

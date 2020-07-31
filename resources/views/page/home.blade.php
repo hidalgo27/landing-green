@@ -114,7 +114,7 @@
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
                     <div class="single-fun-fact-wrap layout--2 text-white">
                         <span>Faltan</span>
-                        <p class="fun-fact-number"><span class="odometer text-white" data-count="4"></span>
+                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>
                             <small class="text-white">Días</small>
                         </p>
 
@@ -134,6 +134,17 @@
                         {{ session('status') }}
                     </div>
                 @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>Ya tienes un registro.</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <div class="event-registration-wrapper py-5 text-center mt-sm-50">
                     <h3 class="mb-0">Registrarse para clases gratis</h3>
                     <span class="text-center py-3 d-block">Sin trucos, sin pagos</span>
