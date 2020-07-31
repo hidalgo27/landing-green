@@ -21,7 +21,7 @@
     <link href="{{asset('assets/css/vendor.css')}}" rel="stylesheet">
     <!--=== Main Style CSS ===-->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+
 
     <!-- Modernizer JS -->
     <script src="{{asset('assets/js/modernizr.min.js')}}"></script>
