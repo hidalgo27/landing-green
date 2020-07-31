@@ -26,13 +26,15 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @php $i = 1 @endphp
                             @foreach($alumno as $alumnos)
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row">{{$i}}</th>
                                 <td>{{$alumnos->nombre}}</td>
                                 <td>{{$alumnos->email}}</td>
                                 <td>{{$alumnos->telefono}}</td>
                             </tr>
+                            @php $i++ @endphp
                             @endforeach
                             </tbody>
                         </table>
