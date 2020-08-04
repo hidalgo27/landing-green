@@ -22,6 +22,7 @@ class HomepageController extends Controller
         $alumnos->email = $request->input('email');
         $alumnos->telefono = $request->input('cel');
         $alumnos->evento = '03 agosto gratis';
+        $alumnos->grupo = $request->input('grupo');
         $alumnos->estado = '1';
         $alumnos->save();
 
@@ -43,5 +44,10 @@ class HomepageController extends Controller
 //        return view('page.home')->with('status', 'Successfully updated video');;
     }
 
+
+    public function list_group(){
+        $alumno = TAlumno::all();
+        return view('page.list-group', compact('alumno'));
+    }
 
 }

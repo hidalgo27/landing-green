@@ -43,3 +43,9 @@ Route::post('form/suscripcion', [
 //    'uses' => 'HomeController@lista_alumnos',
 //    'as' => 'lista_alumnos_path',
 //]);
+
+
+Route::get('/list-group', [
+    'uses' => 'Page\HomepageController@list_group',
+    'as' => 'list_group_path',
+]);

@@ -112,13 +112,13 @@
                     <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
                     <h2>Inicio 3 de Agosto <span class="d-block">15 días gratis</span></h2>
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
-                    <div class="single-fun-fact-wrap layout--2 text-white">
-                        <span>Faltan</span>
-                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>
-                            <small class="text-white">Días</small>
-                        </p>
+{{--                    <div class="single-fun-fact-wrap layout--2 text-white">--}}
+{{--                        <span>Faltan</span>--}}
+{{--                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>--}}
+{{--                            <small class="text-white">Días</small>--}}
+{{--                        </p>--}}
 
-                    </div>
+{{--                    </div>--}}
                     <ul>
                         <li>
                             <a href="#clases" class="btn btn-bordered">Mas información</a>
@@ -164,6 +164,17 @@
 
                             <div class="single-input-item">
                                 <input type="tel" name="cel" placeholder="Numero de celular (whatsapp)" required/>
+                            </div>
+
+                            <div class="single-input-item">
+{{--                                <input type="text" name="grupo" placeholder="Grupo" required/>--}}
+                                <select name="grupo" required>
+                                    <option value="">Seleccione su grupo</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                </select>
                             </div>
 
                             <div class="single-input-item">
