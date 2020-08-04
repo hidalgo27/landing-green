@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $request->user()->authorizeRoles(['user', 'admin']);
 
-        $alumno = TAlumno::all();
+        $alumno = TAlumno::all()->sortByDesc('created_at');
 
         return view('home', compact('alumno'));
     }
