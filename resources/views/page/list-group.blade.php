@@ -65,7 +65,7 @@
             <!-- End Logo Area Wrap -->
 
             <!-- Start Main Navigation Wrap -->
-           
+
         </div>
         <!-- End Main Navigation Wrap -->
     </div>
@@ -80,7 +80,7 @@
             <div class="col-md-12 my-auto">
                 <!-- Start Hero Banner Content -->
                 <div class="hero-content-wrap text-center text-md-left landing-nav">
-                    
+
                     <h2>Inicio 3 de Agosto <span class="d-block">YA CASI EMPEZAMOS</span></h2>
                     <p>Por favor agrege su grupo en su registro.</p>
                     <div class="single-fun-fact-wrap layout--2 text-white">
@@ -90,11 +90,11 @@
                         </p>
 
                     </div>
-                    
+
                 </div>
             </div>
 
-          
+
         </div>
     </div>
 </div>
@@ -135,7 +135,7 @@
                                 <td>{{$alumnos->nombre}}</td>
                                 <td>{{$alumnos->email}}</td>
                                 <td>{{$alumnos->telefono}}</td>
-                                <td><input type="text" class="form-control"></td>
+                                <td>{{$alumnos->grupo}}</td>
                             </tr>
                             @php $i++ @endphp
                             @endforeach

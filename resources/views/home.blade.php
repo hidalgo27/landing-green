@@ -23,6 +23,7 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Celular</th>
+                                <th scope="col">Grupo</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -33,6 +34,7 @@
                                 <td>{{$alumnos->nombre}}</td>
                                 <td>{{$alumnos->email}}</td>
                                 <td>{{$alumnos->telefono}}</td>
+                                <td>{{$alumnos->grupo}}</td>
                             </tr>
                             @php $i++ @endphp
                             @endforeach
