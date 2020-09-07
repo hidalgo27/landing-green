@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Academia Pre Universitaria Green. Inicio de clases 03 de agosto. 15 días gratis.">
+    <meta name="description" content="Somos GREEN ACADEMIA, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA).">
 
-    <title>Green Academia Pre | 03 agosto</title>
+    <title>Green Academia Pre | Cusco</title>
 
     <!--=== Favicon ===-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
