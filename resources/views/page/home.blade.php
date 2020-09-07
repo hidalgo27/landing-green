@@ -222,7 +222,7 @@
                 <!-- Single FunFact Start -->
                 <div class="col-6 col-lg-3 text-center">
                     <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/01.jpg">
-                        <p class="fun-fact-number"><span class="odometer" data-count="4770"></span>
+                        <p class="fun-fact-number"><span class="odometer" data-count="5770"></span>
                         </p>
                         <h4>Horas de trabajo</h4>
                     </div>
@@ -232,7 +232,7 @@
                 <!-- Single FunFact Start -->
                 <div class="col-6 col-lg-3 text-center">
                     <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/02.jpg">
-                        <p class="fun-fact-number"><span class="odometer" data-count="90"></span>%</p>
+                        <p class="fun-fact-number"><span class="odometer" data-count="99"></span>%</p>
                         <h4>Clientes felices</h4>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                 <!-- Single FunFact Start -->
                 <div class="col-6 col-lg-3 text-center">
                     <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/04.jpg">
-                        <p class="fun-fact-number"><span class="odometer" data-count="129"></span>
+                        <p class="fun-fact-number"><span class="odometer" data-count="1200"></span>
                         </p>
                         <h4>Tazas de café</h4>
                     </div>
@@ -298,7 +298,7 @@
                         <div class="portfolio-content">
                             <div class="row mtm-30 masonry-grid">
                                 <!-- Single Portfolio Item #01 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
+                                <div class="col-4 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/rm.png')}}" alt="Portfolio Image" />
@@ -319,7 +319,7 @@
                                     </div>
                                 </div>
                                 <!-- Single Portfolio Item #01 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c">
+                                <div class="col-4 col-lg-2 grupo-a grupo-b grupo-c">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/algebra.png')}}" alt="Portfolio Image" />
@@ -341,7 +341,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #02 -->
-                                <div class="col-sm-6 col-lg-2 grupo-b">
+                                <div class="col-4 col-lg-2 grupo-b">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/biologia.png')}}" alt="Portfolio Image" />
@@ -364,7 +364,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #03 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
+                                <div class="col-4 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/comunicacion.png')}}" alt="Portfolio Image" />
@@ -387,7 +387,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #04 -->
-                                <div class="col-sm-6 col-lg-2 grupo-c">
+                                <div class="col-4 col-lg-2 grupo-c">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/economia.png')}}" alt="Portfolio Image" />
@@ -410,7 +410,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #05 -->
-                                <div class="col-sm-6 col-lg-2 grupo-d">
+                                <div class="col-4 col-lg-2 grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/filosofia.png')}}" alt="Portfolio Image" />
@@ -433,7 +433,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #06 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b">
+                                <div class="col-4 col-lg-2 grupo-a grupo-b">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/fisica.png')}}" alt="Portfolio Image" />
@@ -456,7 +456,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #07 -->
-                                <div class="col-sm-6 col-lg-2 grupo-c grupo-d">
+                                <div class="col-4 col-lg-2 grupo-c grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/geografia.png')}}" alt="Portfolio Image" />
@@ -479,7 +479,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #08 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a">
+                                <div class="col-4 col-lg-2 grupo-a">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/geometria.png')}}" alt="Portfolio Image" />
@@ -502,7 +502,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #09 -->
-                                <div class="col-sm-6 col-lg-2 grupo-d">
+                                <div class="col-4 col-lg-2 grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/historia.png')}}" alt="Portfolio Image" />
@@ -525,7 +525,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #09 -->
-                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b">
+                                <div class="col-4 col-lg-2 grupo-a grupo-b">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/quimica.png')}}" alt="Portfolio Image" />
@@ -548,7 +548,7 @@
                                 </div>
 
                                 <!-- Single Portfolio Item #09 -->
-                                <div class="col-sm-6 col-lg-2 grupo-c grupo-d">
+                                <div class="col-4 col-lg-2 grupo-c grupo-d">
                                     <div class="single-portfolio-wrap">
                                         <figure class="portfolio-thumb">
                                             <img src="{{asset('images/iconos/cursos/circle/rv.png')}}" alt="Portfolio Image" />
