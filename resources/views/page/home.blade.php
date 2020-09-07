@@ -68,33 +68,7 @@
             <div id="rev_slider_classic" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8">
                 <ul>
                     <!-- SLIDE 01 -->
-{{--                    <li data-index="rs-30" data-transition="slideoverright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('images/pizarra.png')}}"--}}
-{{--                        data-rotate="0" data-saveperformance="off" data-title="Slide">--}}
-{{--                        <!-- MAIN IMAGE -->--}}
-{{--                        <img src="{{asset('images/pizarra.png')}}" alt="Slider" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>--}}
-{{--                        <!-- LAYERS -->--}}
 
-{{--                        <!-- LAYER NR. 1 -->--}}
-{{--                        <div class="tp-caption tp-resizeme" id="slide-30-layer-3" data-x="['center','center','center','center']" data-hoffset="['1','-11','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-53','-82','-59','-171']" data-fontsize="['90','70','50','25']"--}}
-{{--                             data-lineheight="['140','110','80','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'--}}
-{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 140px; font-weight: 700; color: rgba(255,255,255,1);letter-spacing:0;">--}}
-{{--                            PRE UNSAAC - PRE ANDINA--}}
-{{--                        </div>--}}
-
-{{--                        <!-- LAYER NR. 2 -->--}}
-{{--                        <div class="tp-caption tp-resizeme" id="slide-30-layer-4" data-x="['center','center','center','center']" data-hoffset="['8','-12','0','-4']" data-y="['middle','middle','middle','middle']" data-voffset="['69','53','46','-84']" data-fontsize="['18','18','24','20']"--}}
-{{--                             data-lineheight="['35','35','35','24']" data-width="['700','600','601','420']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":800,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'--}}
-{{--                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 6; min-width: 700px; max-width: 700px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 600; color: rgba(255,255,255,1);">--}}
-{{--                            Ingrese a la carrera profesional que desees. <span class="text-g-green">Luz verde para la Universidad.</span>--}}
-{{--                        </div>--}}
-
-{{--                        <!-- LAYER NR. 3 -->--}}
-{{--                        <div class="tp-caption rev-btn " id="slide-30-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['176','176','176','42']" data-width="none" data-height="none"--}}
-{{--                             data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#aeea00;bg:rgba(31,31,31,1);bc:rgba(31,31,31,1);"}]'--}}
-{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">--}}
-{{--                            Comenzar Ahora--}}
-{{--                        </div>--}}
-{{--                    </li>--}}
                     <!-- SLIDE 02 -->
                     <li data-index="rs-31" data-transition="slideoverright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('images/astronauta.jpg')}}"
                         data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -139,6 +113,34 @@
                              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                             QUIERO REGISTRARME
                         </a>
+                    </li>
+
+                    <li data-index="rs-30" data-transition="slideoverright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('images/pizarra.png')}}"
+                        data-rotate="0" data-saveperformance="off" data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{asset('images/pizarra.png')}}" alt="Slider" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-resizeme" id="slide-30-layer-3" data-x="['center','center','center','center']" data-hoffset="['1','-11','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-53','-82','-59','-171']" data-fontsize="['90','70','50','25']"
+                             data-lineheight="['140','110','80','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 140px; font-weight: 700; color: rgba(255,255,255,1);letter-spacing:0;">
+                            PRE UNSAAC - PRE ANDINA
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-resizeme" id="slide-30-layer-4" data-x="['center','center','center','center']" data-hoffset="['8','-12','0','-4']" data-y="['middle','middle','middle','middle']" data-voffset="['69','53','46','-84']" data-fontsize="['18','18','24','20']"
+                             data-lineheight="['35','35','35','24']" data-width="['700','600','601','420']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":800,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'
+                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 6; min-width: 700px; max-width: 700px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 600; color: rgba(255,255,255,1);">
+                            Ingrese a la carrera profesional que desees. <span class="text-g-green">Luz verde para la Universidad.</span>
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+{{--                        <div class="tp-caption rev-btn " id="slide-30-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['176','176','176','42']" data-width="none" data-height="none"--}}
+{{--                             data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#aeea00;bg:rgba(31,31,31,1);bc:rgba(31,31,31,1);"}]'--}}
+{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">--}}
+{{--                            Comenzar Ahora--}}
+{{--                        </div>--}}
                     </li>
 
                 </ul>
