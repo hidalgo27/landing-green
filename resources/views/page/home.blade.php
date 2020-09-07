@@ -1,1322 +1,940 @@
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
+@extends('layouts.page.app')
+@section('content')
+    <!--== Scroll to top ==-->
+    <a href="javascript:void(0)" class="scroll-top"><i class="fa fa-angle-up"></i></a>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Academia Pre Universitaria Green. Inicio de clases 03 de agosto. 15 días gratis.">
-
-    <title>Green Academia Pre | 03 agosto</title>
-
-    <!--=== Favicon ===-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-
-    <!--== Google Fonts ==-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700%7CPlayfair+Display:400,400i" rel="stylesheet">
-
-    <!--=== All Plugins CSS ===-->
-    <link href="{{asset('assets/css/plugins.css')}}" rel="stylesheet">
-    <!--=== All Vendor CSS ===-->
-    <link href="{{asset('assets/css/vendor.css')}}" rel="stylesheet">
-    <!--=== Main Style CSS ===-->
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-
-
-    <!-- Modernizer JS -->
-    <script src="{{asset('assets/js/modernizr.min.js')}}"></script>
-
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=2238600679714980&autoLogAppEvents=1" nonce="S9QfEn1n"></script>
-</head>
-
-<body class="preloader-">
-
-<!--== Scroll to top ==-->
-<a href="javascript:void(0)" class="scroll-top"><i class="fa fa-angle-up"></i></a>
-
-<!--== Start PreLoader Wrap ==-->
-<div class="preloader-area-wrap">
-    <div class="spinner d-flex justify-content-center align-items-center h-100">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-    </div>
-</div>
-<!--== End PreLoader Wrap ==-->
-
-<!-- partial:_demo-panel.htm   partial -->
-
-<!--== Start Header Area Wrapper ==-->
-<header class="header-area-wrapper transparent-header sticky-header">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Start Logo Area Wrap -->
-            <div class="col-6 col-lg-2">
-                <a href="/" class="logo-wrap d-block">
-                    <img src="{{asset('images/logo-green-edu.png')}}" alt="White Logo" />
-{{--                    <img src="{{asset('images/logo-green-edu.png')}}" class="sticky-logo" alt="Black Logo" />--}}
-                </a>
-            </div>
-            <!-- End Logo Area Wrap -->
-
-            <!-- Start Main Navigation Wrap -->
-            <div class="col-6 col-lg-10 my-auto ml-auto position-static">
-                <div class="header-right-area d-flex justify-content-end align-items-center">
-                    <div class="navigation-area-wrap d-none d-lg-block mr-5">
-                        <nav class="main-navigation">
-                            <ul class="main-menu nav landing-nav justify-content-end">
-{{--                                <li><a href="index-event.html">Home</a>--}}
-{{--                                </li>--}}
-                                <li><a href="#clases">Sobre las clases</a>
-                                </li>
-{{--                                <li><a href="#docentes">Nuestros Docentes</a>--}}
-{{--                                </li>--}}
-                                <li><a href="#horarios">Horarios por grupos</a>
-                                <li><a href="#faq">Preguntas Frecuentes</a>
-                                <li><a href="#oficinas">Oficina</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-{{--                    <div class="off-canvas-area-wrap ">--}}
-
-{{--                        <button class="search-box-open d-block d-lg-none"><i class="fa fa-search"></i>--}}
-{{--                        </button>--}}
-{{--                        <button class="off-canvas-btn d-none d-lg-block"><i class="fa fa-bars"></i>--}}
-{{--                        </button>--}}
-{{--                        <button class="mobile-menu text-white d-lg-none"><i class="fa fa-bars"></i>--}}
-{{--                        </button>--}}
-{{--                        --}}
-                    </div>
-                </div>
-            </div>
-            <!-- End Main Navigation Wrap -->
+    <!--== Start PreLoader Wrap ==-->
+    <div class="preloader-area-wrap">
+        <div class="spinner d-flex justify-content-center align-items-center h-100">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
     </div>
-</header>
-<!--== End Header Area Wrapper ==-->
+    <!--== End PreLoader Wrap ==-->
 
-<!--== Start Event Hero Banner Area ==-->
-<div class="event-hero-area-banner bg-img" data-bg="{{asset('images/pizarra.png')}}">
-    <div class="container h-100">
-        <div class="row align-items-center h-100">
-            <div class="col-md-6 my-auto">
-                <!-- Start Hero Banner Content -->
-                <div class="hero-content-wrap text-center text-md-left landing-nav">
-                    <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
-                    <h2>Inicio 3 de Agosto <span class="d-block">15 días gratis</span></h2>
-                    <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
-{{--                    <div class="single-fun-fact-wrap layout--2 text-white">--}}
-{{--                        <span>Faltan</span>--}}
-{{--                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>--}}
-{{--                            <small class="text-white">Días</small>--}}
-{{--                        </p>--}}
+    <!-- partial:_demo-panel.htm   partial -->
 
-{{--                    </div>--}}
-                    <ul>
-                        <li>
-                            <a href="#clases" class="btn btn-bordered">Mas información</a>
-                        </li>
-                    </ul>
+    <!--== Start Header Area Wrapper ==-->
+    <header class="header-area-wrapper transparent-header sticky-header">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Start Logo Area Wrap -->
+                <div class="col-6 col-lg-2">
+                    <a href="index.html" class="logo-wrap d-block">
+                        <img src="{{asset('images/logo-green-edu.png')}}" alt="White Logo" />
+{{--                        <img src="assets/img/logo-black.png" class="sticky-logo" alt="Black Logo" />--}}
+                    </a>
                 </div>
-            </div>
+                <!-- End Logo Area Wrap -->
 
-            <div class="col-xl-5 col-md-6 my-auto ml-auto">
-                <!-- Start Event Registration Area -->
-                @if (session('status'))
-                    <div class="bg-primary p-3 text-white">
-                        {{ session('status') }}
-                    </div>
-                @endif
-
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>Ya tienes un registro.</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
-                <div class="event-registration-wrapper py-5 text-center mt-sm-50">
-                    <h3 class="mb-0">Registrarse para clases gratis</h3>
-                    <span class="text-center py-3 d-block">Sin trucos, sin pagos</span>
-
-                    <div class="registration-form">
-
-
-                        <form action="{{route('form_free_path')}}" method="post">
-                            @csrf
-                            <div class="single-input-item">
-                                <input type="text" name="name" placeholder="Nombre Completo" required/>
-                            </div>
-
-                            <div class="single-input-item">
-                                <input type="email" name="email" placeholder="Email" required/>
-                            </div>
-
-                            <div class="single-input-item">
-                                <input type="tel" name="cel" placeholder="Numero de celular (whatsapp)" required/>
-                            </div>
-
-                            <div class="single-input-item">
-{{--                                <input type="text" name="grupo" placeholder="Grupo" required/>--}}
-                                <select name="grupo" required>
-                                    <option value="">Seleccione su grupo</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </div>
-
-                            <div class="single-input-item">
-                                <button type="submit" class="btn btn-brand w-100">Registrame ahora</button>
-                            </div>
-                        </form>
-                    </div>
-                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
-                        Si deseas inscribirte en ese momento el costo sera de S/99 mensuales o S/198 x 3 meses </small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--== End Event Hero Banner Area ==-->
-
-<!--== Start Event About Area ==-->
-<section id="clases" class="event-about-area  mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
-    <div class="container">
-        <div class="row">
-            <!-- Start Section title -->
-            <div class="col-lg-6 m-auto text-center">
-                <div class="section-title-wrap layout--2">
-                    <i class="fa fa-microphone"></i>
-                    <h2>Sobre las clases</h2>
-                    <p class="mb-0">Pasar a la universidad nunca fue tan sencillo y desde la comodidad de tu casa.</p>
-                </div>
-            </div>
-            <!-- End Section title -->
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 order-1 order-lg-0">
-                <!-- Start About Event Content -->
-                <div class="event-about-content-wrap">
-                    <div class="event-about-accordion" id="eventAboutAccordion">
-                        <!-- Start Event Accordion #01 -->
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
-
-                                    Información general
-
-                                    <span class="icons">
-
-                                        <i class="fa fa-plus"></i>
-
-                                        <i class="fa fa-minus"></i>
-
-                                    </span>
-
-                                </h3>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" data-parent="#eventAboutAccordion">
-                                <div class="card-body">
-                                    <p class="mb-4">Somos GREEN, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA)
-                                        Nuestra metodología online te permitirá desarrollar todo vuestro potencial y aprender de una manera dinámica.
-                                    </p>
-                                    <div class="alert alert-success pt-4 d-block">
-                                        GREEN y tu juntos para tener luz verde para tu ingreso!
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Start Main Navigation Wrap -->
+                <div class="col-6 col-lg-10 my-auto ml-auto position-static">
+                    <div class="header-right-area d-flex justify-content-end align-items-center">
+                        <div class="navigation-area-wrap d-none d-lg-block mr-5">
+                            <nav class="main-navigation">
+                                <ul class="main-menu nav landing-nav justify-content-end">
+                                    <li><a href="#cursos">Cursos</a>
+                                    </li>
+                                    <li><a href="#faq">Preguntas Frecuentes</a>
+                                    </li>
+                                    <li><a href="#oficina">Oficina</a>
+                                    </li>
+                                    <li><a href="https://greenacademia.workplace.com" target="_blank"><span class="text-g-green">Login <i class="fa fa-sign-in"></i></span></a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
 
-                        <!-- Start Event Accordion #02 -->
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h3 data-toggle="collapse" data-target="#collapseTwo">
-
-                                    Preguntas Frecuentes
-
-                                    <span class="icons">
-
-                                        <i class="fa fa-plus"></i>
-
-                                        <i class="fa fa-minus"></i>
-
-                                    </span>
-
-                                </h3>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-parent="#eventAboutAccordion">
-                                <div class="card-body">
-                                    <p>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
-                                        Si deseas inscribirte en ese momento el costo será de S/99 mensuales o S/198 x 3 meses
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <a href="#faq" class="btn btn-bordered">Ver más</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Start Event Accordion #03 -->
-{{--                        <div class="card">--}}
-{{--                            <div class="card-header" id="headingThree">--}}
-{{--                                <h3 data-toggle="collapse" data-target="#collapseThree">--}}
-
-{{--                                    Sponsor Information--}}
-
-{{--                                    <span class="icons">--}}
-
-{{--                                        <i class="fa fa-plus"></i>--}}
-
-{{--                                        <i class="fa fa-minus"></i>--}}
-
-{{--                                    </span>--}}
-
-{{--                                </h3>--}}
-{{--                            </div>--}}
-{{--                            <div id="collapseThree" class="collapse" data-parent="#eventAboutAccordion">--}}
-{{--                                <div class="card-body">--}}
-{{--                                        <p>Keytar DIY cred thundercats direct trade viral umami, fanny pack ugh authen shabby chic chartreuse. Lo-fi roof party.Lorem ipsum dolor sit amet, ut vidis commune scriptorem.</p>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+{{--                        <div class="off-canvas-area-wrap nav">--}}
+{{--                            <button class="search-box-open d-block d-lg-none"><i class="fa fa-search"></i>--}}
+{{--                            </button>--}}
+{{--                            <button class="off-canvas-btn d-none d-lg-block"><i class="fa fa-bars"></i>--}}
+{{--                            </button>--}}
+{{--                            <button class="mobile-menu text-white d-lg-none"><i class="fa fa-bars"></i>--}}
+{{--                            </button>--}}
 {{--                        </div>--}}
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-6 m-auto">
-                <!-- Start Event About Thumbnail Area -->
-{{--                <figure class="event-about-thumb mb-sm-30 mb-md-30">--}}
-{{--                    <img src="{{asset('images/15-dias.png')}}" alt="Event About" />--}}
-{{--                </figure>--}}
-{{--                --}}
-
-                <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/721667815354456/" data-show-text="false" data-width=""><blockquote cite="https://developers.facebook.com/greencusco/videos/721667815354456/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/greencusco/videos/721667815354456/">15 DÍAS GRATIS - CLASES ONLINE PRE-UNSAAC, ACADEMIA GREEN</a><p>¡Todo es válido si se trata de tu FUTUR O!
-                            ✅  ACADEMIA GREEN  ✅
-                            𝗣𝗥𝗘𝗣𝗔𝗥𝗔𝗖𝗜𝗢́𝗡  𝗣𝗥𝗘𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗜𝗧𝗔𝗥𝗜𝗔
-                            🚨 GRUPOS 🇦​​​​​ 🇧​​​​​ 🇨​​​​​ y ​​​​​ 🇩
-                            🚨 Pre-Unsaac
-                            🚨 Docentes preparados
-                            🚨 Clases online
-                            👉   Próximo INICIO:  𝟎𝟑 𝐝𝐞 𝐀𝐆𝐎𝐒𝐓𝐎  👈
-                            📞 +໋51 999 200 117</p>Publicado por <a href="https://www.facebook.com/greencusco/">GREEN Academia Pre</a> en Lunes, 27 de julio de 2020</blockquote></div>
+                <!-- End Main Navigation Wrap -->
             </div>
         </div>
-    </div>
-</section>
-<!--== End Event About Area ==-->
+    </header>
+    <!--== End Header Area Wrapper ==-->
 
-<!--== Start Fun Fact Area Wrapper ==-->
-{{--<section class="fun-fact-area-wrapper bg-offwhite pt-92 pt-md-70 pt-sm-46 pb-96 pb-md-76 pb-sm-48">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row mtm-30 align-items-center">--}}
-{{--            <!-- Single FunFact Start -->--}}
-{{--            <div class="col-6 col-lg-9 text-center">--}}
+    <!-- Start Hero Slider Area Wrapper -->
+    <div class="slider-area-wrapper fix">
+        <div id="rev_slider_13_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="classic-agency" data-source="gallery">
+            <div id="rev_slider_classic" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8">
+                <ul>
+                    <!-- SLIDE 01 -->
+{{--                    <li data-index="rs-30" data-transition="slideoverright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('images/pizarra.png')}}"--}}
+{{--                        data-rotate="0" data-saveperformance="off" data-title="Slide">--}}
+{{--                        <!-- MAIN IMAGE -->--}}
+{{--                        <img src="{{asset('images/pizarra.png')}}" alt="Slider" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>--}}
+{{--                        <!-- LAYERS -->--}}
 
-{{--                    <p class="fun-fact-number"><span class="odometer" data-count="5"></span>--}}
-{{--                    </p>--}}
-{{--                    <h4 class="font-weight-bold h1">Las Clases inician en:</h4>--}}
+{{--                        <!-- LAYER NR. 1 -->--}}
+{{--                        <div class="tp-caption tp-resizeme" id="slide-30-layer-3" data-x="['center','center','center','center']" data-hoffset="['1','-11','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-53','-82','-59','-171']" data-fontsize="['90','70','50','25']"--}}
+{{--                             data-lineheight="['140','110','80','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":400,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'--}}
+{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 140px; font-weight: 700; color: rgba(255,255,255,1);letter-spacing:0;">--}}
+{{--                            PRE UNSAAC - PRE ANDINA--}}
+{{--                        </div>--}}
 
-{{--            </div>--}}
-{{--            <!-- Single FunFact End -->--}}
+{{--                        <!-- LAYER NR. 2 -->--}}
+{{--                        <div class="tp-caption tp-resizeme" id="slide-30-layer-4" data-x="['center','center','center','center']" data-hoffset="['8','-12','0','-4']" data-y="['middle','middle','middle','middle']" data-voffset="['69','53','46','-84']" data-fontsize="['18','18','24','20']"--}}
+{{--                             data-lineheight="['35','35','35','24']" data-width="['700','600','601','420']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":800,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'--}}
+{{--                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 6; min-width: 700px; max-width: 700px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 600; color: rgba(255,255,255,1);">--}}
+{{--                            Ingrese a la carrera profesional que desees. <span class="text-g-green">Luz verde para la Universidad.</span>--}}
+{{--                        </div>--}}
 
-{{--            <!-- Single FunFact Start -->--}}
-{{--            <div class="col-6 col-lg-3 text-center">--}}
-{{--                <div class="single-fun-fact-wrap layout--2">--}}
-{{--                    <p class="fun-fact-number"><span class="odometer" data-count="20"></span>%</p>--}}
-{{--                    <h4>Days</h4>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- Single FunFact End -->--}}
+{{--                        <!-- LAYER NR. 3 -->--}}
+{{--                        <div class="tp-caption rev-btn " id="slide-30-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['176','176','176','42']" data-width="none" data-height="none"--}}
+{{--                             data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#aeea00;bg:rgba(31,31,31,1);bc:rgba(31,31,31,1);"}]'--}}
+{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">--}}
+{{--                            Comenzar Ahora--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+                    <!-- SLIDE 02 -->
+                    <li data-index="rs-31" data-transition="slideoverright" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('images/astronauta.jpg')}}"
+                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{asset('images/astronauta.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
 
-{{--            <!-- Single FunFact Start -->--}}
-{{--            <div class="col-6 col-lg-3 text-center">--}}
-{{--                <div class="single-fun-fact-wrap layout--2">--}}
-{{--                    <p class="fun-fact-number"><span class="odometer" data-count="50"></span>+</p>--}}
-{{--                    <h4>Speakers</h4>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- Single FunFact End -->--}}
+                        <!-- LAYER NR. 2 -->
+{{--                        <div class="tp-caption abrill-110-400   tp-resizeme" id="slide-39-layer-1" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['-80','-200','-200','-140']" data-fontsize="['110','110','110','40']"--}}
+{{--                             data-lineheight="['100','100','100','40']" data-width="['670','670','670','320']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1740,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'--}}
+{{--                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; min-width: 670px; max-width: 670px; white-space: normal; line-height: 100px; color: rgba(255,255,255,1);">--}}
+{{--                            CICLO Primera opcion--}}
+{{--                        </div>--}}
 
-{{--            <!-- Single FunFact Start -->--}}
-{{--            <div class="col-6 col-lg-3 text-center">--}}
-{{--                --}}
-{{--            </div>--}}
-{{--            <!-- Single FunFact End -->--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
-<!--== End Fun Fact Area Wrapper ==-->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-39-layer-5" data-x="['center','left','left','left']" data-hoffset="['-60','40','40','40']" data-y="['middle','middle','middle','middle']" data-voffset="['-75','-195','-195','-140']"
+                             data-width="7" data-height="['280','280','280','120']" data-whitespace="normal" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1160,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background-color:#aeea00;"></div>
 
-<!-- Start Event Banner Wrapper -->
-{{--<section class="event-banner-wrapper">--}}
-{{--    <div class="event-banner-content d-sm-flex align-items-center">--}}
-{{--        <!-- Start Banner Item #01 -->--}}
-{{--        <div class="single-banner-wrap bg-img" data-bg="assets/img/home-event/call-action-bg-01.jpg">--}}
-{{--            <h2>Many features of the event</h2>--}}
-{{--            <a href="#" class="btn btn-bordered">Discover More</a>--}}
-{{--        </div>--}}
-
-{{--        <!-- Start Banner Item #02 -->--}}
-{{--        <div class="single-banner-wrap bg-img" data-bg="assets/img/home-event/call-action-bg-02.jpg">--}}
-{{--            <h2>Tip Ideas for <span>Presentation</span></h2>--}}
-{{--            <a href="#" class="btn btn-bordered">Discover More</a>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    --}}
-{{--</section>--}}
-<!-- End Event Banner Wrapper -->
-
-<!--== Start Event Speaker Wrapper ==-->
-<section class="event-speaker-wrapper d-none mt-120 pb-5 mt-md-80 mt-sm-60" id="docentes">
-    <div class="container">
-        <div class="row mb-5">
-            <!-- Start Section title -->
-            <div class="col-lg-6 m-auto text-center">
-                <div class="section-title-wrap layout--2">
-                    <i class="fa fa-users"></i>
-                    <h2>Nuestros Docentes</h2>
-                    <p class="mb-0">Los mejores docentes de la región.</p>
-                </div>
-            </div>
-            <!-- End Section title -->
-        </div>
-
-        <div class="row mtm-50 mtm-sm-30">
-            <!-- Start Speaker Member #01 -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/docentes/1.png')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Mendel</h3>
-                        <h6 class="designation">Aritmética</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start Speaker Member #02 -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/docentes/2.png')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Cristian Zamata</h3>
-                        <h6 class="designation">Algebra</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start Speaker Member #03 -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Efrain Barrientos</h3>
-                        <h6 class="designation">Física</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Javier</h3>
-                        <h6 class="designation">Química</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Gerardo</h3>
-                        <h6 class="designation">Geometría y Tirgonometría</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/docentes/liz.png')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Liz</h3>
-                        <h6 class="designation">Competencia Comunicativa</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Javier</h3>
-                        <h6 class="designation">Biología</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>--</h3>
-                        <h6 class="designation">Psicología</h6>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Roly</h3>
-                        <h6 class="designation">Geografía</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>--</h3>
-                        <h6 class="designation">Economía</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Sandra</h3>
-                        <h6 class="designation">Educación Cívica</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Javier</h3>
-                        <h6 class="designation">Filosofía y Lógica</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <div class="speaker-member-wrap">
-                    <figure class="speaker-thumbnail">
-                        <img src="{{asset('images/05.jpg')}}" alt="Speaker" />
-                    </figure>
-                    <div class="speaker-info text-center">
-                        <h3>Jesus</h3>
-                        <h6 class="designation">Historia</h6>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-<!--== End Event Speaker Wrapper ==-->
-
-<!--== Start Event Call to Action Area ==-->
-
-<!--== End Event Call to Action Area ==-->
-
-<!--== Start Event Schedule Wrapper ==-->
-<section class="event-schedule-wrapper bg-offwhite pt-120 pt-md-80 pt-sm-60 pb-120 pb-md-80 pb-sm-60" id="horarios">
-    <div class="container">
-        <div class="row">
-            <!-- Start Section title -->
-            <div class="col-lg-6 m-auto text-center">
-                <div class="section-title-wrap layout--2">
-                    <i class="fa fa-calendar-minus-o"></i>
-                    <h2>Horario</h2>
-                    <p class="mb-0">Vea su horario por grupos</p>
-                </div>
-            </div>
-            <!-- End Section title -->
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="event-schedule-tab-wrap">
-                    <!-- Start Event Schedule Day Menu -->
-                    <div class="event-schedule-day-menu">
-                        <ul class="nav" id="eventSchedule">
-                            <li><a class="active" data-toggle="tab" href="#day_01_content">Grupo A</a>
-                            </li>
-                            <li><a data-toggle="tab" href="#day_02_content">Grupo B</a>
-                            </li>
-                            <li><a data-toggle="tab" href="#day_03_content">Grupo C</a>
-                            </li>
-                            <li><a data-toggle="tab" href="#day_04_content">Grupo D</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Start Event Schedule Content Wrap -->
-                    <div class="event-schedule-content-wrapper">
-                        <div class="tab-content" id="eventScheduleContent">
-                            <!-- Start Event Schedule Content #01 -->
-                            <div class="tab-pane fade show active" id="day_01_content">
-                                <div class="event-schedule-content-inner">
-                                    <div class="event-schedule-item-content">
-                                        <img src="{{asset('images/horario/a.jpg')}}" alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Start Event Schedule Content #02 -->
-                            <div class="tab-pane fade" id="day_02_content">
-                                <div class="event-schedule-content-inner">
-                                    <div class="event-schedule-item-content">
-                                        <img src="{{asset('images/horario/b.jpg')}}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Event Schedule Content #03 -->
-                            <div class="tab-pane fade" id="day_03_content">
-                                <div class="event-schedule-item-content">
-                                    <img src="{{asset('images/horario/c.jpg')}}" alt="">
-                                </div>
-                            </div>
-
-                            <!-- Start Event Schedule Content #04 -->
-                            <div class="tab-pane fade" id="day_04_content">
-                                <div class="event-schedule-item-content">
-                                    <img src="{{asset('images/horario/d.jpg')}}" alt="">
-                                </div>
-                            </div>
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption   tp-resizeme" id="slide-31-layer-3" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['-80','-200','-200','-140']" data-fontsize="['110','110','110','40']"
+                             data-lineheight="['120','60','100','60']" data-width="['670','670','670','420']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1740,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 110px; font-weight: 700; color: rgba(255,255,255,1);letter-spacing:0">
+                             <span class="text-g-green">CICLO PRIMERA OPCIÓN</span>
                         </div>
-                    </div>
-                </div>
+
+                        <div class="tp-caption poppins-16-400   tp-resizeme" id="slide-39-layer-2" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['150','40','40','110']" data-width="['600','670','670','420']"
+                             data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":2530,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 670px; max-width: 670px; white-space: normal; color: rgba(255,255,255,1);">
+                            <span class="font-weight-bold h5 text-white">Inicio de clases 28 de septiembre</span>
+                        </div>
+
+{{--                        <!-- LAYER NR. 5 -->--}}
+{{--                        <div class="tp-caption tp-resizeme" id="slide-31-layer-4" data-x="['center','center','center','center']" data-hoffset="['8','-12','0','-4']" data-y="['middle','middle','middle','middle']" data-voffset="['65','53','46','-84']" data-fontsize="['18','18','24','20']"--}}
+{{--                             data-lineheight="['124','24','30','26']" data-width="['700','600','601','400']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"}]'--}}
+{{--                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 6; min-width: 700px; max-width: 700px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 600; color: rgba(255,255,255,1);">--}}
+{{--                            Inicio de clases 28 de septiembre--}}
+{{--                        </div>--}}
+
+                        <!-- LAYER NR. 7 -->
+                        <a href="{{route('agosto_2020_path')}}" class="tp-caption rev-btn " id="slide-31-layer-5" data-x="['center','center','center','center']" data-hoffset="['140','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['250','176','176','42']" data-width="none" data-height="none"
+                             data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(31,31,31,1);bc:rgba(31,31,31,1);"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+                            QUIERO REGISTRARME
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </div>
-
-{{--        <div class="row">--}}
-{{--            <div class="col-12">--}}
-{{--                <div class="schedule-download-wrap mt-80 mt-md-50 mt-sm-30 text-center">--}}
-{{--                    <a href="#" class="btn btn-black">Descargar</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
     </div>
-</section>
+    <!-- End Hero Slider Area Wrapper -->
 
-<section id="faq">
-    <div class="accordion-content-wrapper mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
+    <!--== Start Welcome Area Wrapper ==-->
+    <section class="welcome-section mt-120 mt-md-80 mt-sm-60">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
                 <!-- Start Section title -->
                 <div class="col-lg-6 m-auto text-center">
-                    <div class="section-title-wrap layout--2">
-                        <i class="fa fa-list"></i>
-                        <h2>Preguntas Frecuentes</h2>
+                    <div class="section-title-wrap">
+                        <h2>Inicia tu camino...</h2>
+                        <p class="mb-0">Clases en vivo y pre-grabadas + Asesoría personalizada a cada estudiante para lograr obtener óptimos resultados en su examen de admisión..</p>
                     </div>
                 </div>
                 <!-- End Section title -->
             </div>
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <!-- Start Accordion Element #01 -->
-                    <div class="accordion-element-1">
-                        <div class="restaurant-why-us-accordion" id="accordionOne">
-                            <!-- Start Accordion item #01 -->
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
 
-                                        <span>01.</span> ¿Cómo puedo inscribirme?
-
-                                    </h3>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Contáctanos vía whatsapp de 8am a 8pm para que un representante pueda asistirte o también te invitamos a visitarnos en nuestra sede central en Cusco.</p>
-                                    </div>
-                                </div>
+            <div class="row text-center mtm-30">
+                <div class="col-md-4">
+                    <!-- Start Single Discover Item -->
+                    <div class="single-discover-item-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <img src="{{asset('images/iconos/web/simple/metas.png')}}" alt="" class="w-100">
                             </div>
-
-                            <!-- Start Accordion item #02 -->
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h3 data-toggle="collapse" data-target="#collapseTwo">
-
-                                        <span>02.</span>¿Que grupos enseñamos?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Actualmente abarcamos todos los grupos A-B-C-D (UNSAAC)</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #03 -->
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h3 data-toggle="collapse" data-target="#collapseThree">
-
-                                        <span>03.</span> ¿Cuales son los horarios?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Las clases son desde 8.30am a 6.00pm.
-                                            Al cambiar los horarios cada semestre solicitamos por favor contactar a vuestro asesor educativo GREEN para obtener el horario mas actualizado según vuestro grupo. (999 200 117).
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #04 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 04.</span> ¿Cuales son los costos?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>S/99 soles mensuales y también contamos con una promoción x tiempo limitado: 2x3 : paga 2 meses y estudia 3 meses, abonando S/198 podrás acceder a 3 meses de clases.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #05 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 05.</span> Cómo funcionan las clases
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Vía online; nuestros estudiantes reciben los accesos respectivos de nuestras clases en vivo las cuales se desarrollan desde nuestra sede central.
-                                            Igualmente brindamos ejercicios y exámenes simulacros de admisión.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #06 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 06.</span> ¿Cuentan con primera opción?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Por el momento solo Ordinario.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #07 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 07.</span> ¿Hay un acompañamiento fuera de las clases sobre los temas vistos?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>A cada alumno se le asignará un asesor el cual realizará un acompañamiento personalizado tanto con el estudiante como con sus padres.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #08 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 08.</span> En caso de perder una clase por x motivo. ¿Tengo opción a recuperarla? Si es así, ¿mediante qué medio?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Afirmativo, si un estudiante pierde una clase deberá contactar a su asesor para solicitar el acceso de la clase a recuperar.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #09 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 09.</span> ¿Cuál debería ser mi calidad de conexión a internet?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>velocidad que permita ver videos.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #10 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 10.</span> Las dudas al profesor, aparte de las clases en vivo; ¿por donde puedo resolverlas?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Cada profesor cuenta con horas de atención para consultas por favor coordinar con su Asesor la comunicación con el profesor deseado.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #11 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 11.</span> ¿Cuanto duran las clases?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>El ciclo dura 3 meses.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Start Accordion item #12 -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h3 data-toggle="collapse" data-target="#collapseFour">
-
-                                        <span> 12.</span> ¿Existen descuentos para miembros de una misma familia?
-
-                                    </h3>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordionOne">
-                                    <div class="card-body">
-                                        <p>Afirmativo, por favor contáctanos para una cotización personalizada.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
+                        <h3>Logra tus metas:</h3>
+                        <p>No sólo videos: Clases concretas, descargables, prácticas y desde cualquier dispositivo.
+                        </p>
                     </div>
-                    <!-- End Accordion Element #01 -->
+                    <!-- End Single Discover Item -->
+                </div>
 
+                <div class="col-md-4">
+                    <!-- Start Single Discover Item -->
+                    <div class="single-discover-item-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <img src="{{asset('images/iconos/web/simple/examenes.png')}}" alt="" class="w-100">
+                            </div>
+                        </div>
+                        <h3>Examen de admisión y reforzamiento</h3>
+                        <p>Se realizaran simulacros de exámenes de admisión virtual y exámenes de reforzamiento por cada tema que se realice.
+                        </p>
+                    </div>
+                    <!-- End Single Discover Item -->
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Start Single Discover Item -->
+                    <div class="single-discover-item-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <img src="{{asset('images/iconos/web/simple/comunidad.png')}}" alt="" class="w-100">
+                            </div>
+                        </div>
+                        <h3>La mejor comunidad</h3>
+                        <p>Crearemos una ruta de aprendizaje personalizada y toda nuestra comunidad te acompañará.
+                        </p>
+                    </div>
+                    <!-- End Single Discover Item -->
                 </div>
             </div>
+
+
         </div>
-</section>
-<!--== End Event Schedule Wrapper ==-->
-<section class="">
+    </section>
+    <!--== End Welcome Area Wrapper ==-->
 
-    <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/680471732813713/" data-show-text="false" data-width=""><blockquote cite="https://developers.facebook.com/greencusco/videos/680471732813713/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/greencusco/videos/680471732813713/">Academia Green - Comenzó el cambio en la educación</a><p>Tu ingreso es el objetivo 🎯
-
-                ✅ Si postulas a la #Unsaac, nosotros somos tus ALIADOS ✅
-                --- UNIDOS, siempre será mejor ---
-
-                𝐀𝐂𝐀𝐃𝐄𝐌𝐈𝐀 𝐆𝐑𝐄𝐄𝐍
-                👉 Pre-Unsaac
-                👉 Tú eliges la carrera!
-                👉 Iniciamos este 03 de Agosto
-
-                La primera academia 100% cusqueña, especializada para darte clases en línea con docentes creativos, y a un precio accesible! 😎
-
-                🚨 𝗣𝗼𝗿𝗾𝘂𝗲 𝘁𝘂́ 𝗹𝗼 𝘃𝗮𝗹𝗲𝘀, 𝗲𝘀𝘁𝗮𝗺𝗼𝘀 𝗽𝗮𝗿𝗮 𝘁𝗶🚨
-
-                Escríbenos :+໋𝟓𝟏 𝟗𝟗𝟗 𝟐𝟎𝟎 𝟏𝟏𝟕</p>Publicado por <a href="https://www.facebook.com/greencusco/">GREEN Academia Pre</a> en Lunes, 27 de julio de 2020</blockquote></div>
-
-</section>
-<!--== Start Event Registration Ticket Area ==-->
-{{--<section class="event-reg-ticket-wrap parallaxBg bg-img pt-120 pt-md-80 pt-sm-60 pb-120 pb-md-80 pb-sm-60" data-bg="assets/img/home-event/event-hero-bg.jpg">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <!-- Start Section title -->--}}
-{{--            <div class="col-lg-6 m-auto text-center">--}}
-{{--                <div class="section-title-wrap layout--2 white">--}}
-{{--                    <i class="fa fa-ticket"></i>--}}
-{{--                    <h2>Registration Tickets</h2>--}}
-{{--                    <p class="mb-0">Nullam eleifend in varius arcu vitae feugiat magna id ut morbi consectetuer.</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- End Section title -->--}}
-{{--        </div>--}}
-
-{{--        <div class="row mtm-30">--}}
-{{--            <!-- Start Reg Ticket Price Table #01 -->--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-9 m-auto m-md-0 ">--}}
-{{--                <div class="registration-ticket-price-item">--}}
-{{--                    <span class="ticket-price">30 <sup>$</sup></span>--}}
-
-{{--                    <h3 class="ticket-plane-name">Basic</h3>--}}
-
-{{--                    <p>Through successfully managing inves for more than aesthete nealson to a professional residential prop.--}}
-{{--                    </p>--}}
-
-{{--                    <a href="#" class="btn btn-bordered d-block">Register Now</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <!-- Start Reg Ticket Price Table #02 -->--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-9 m-auto m-md-0 ">--}}
-{{--                <div class="registration-ticket-price-item featured">--}}
-{{--                    <span class="ticket-price">50 <sup>$</sup></span>--}}
-
-{{--                    <h3 class="ticket-plane-name">Standard</h3>--}}
-
-{{--                    <p>Through successfully managing inves for more than aesthete nealson to a professional residential prop.--}}
-{{--                    </p>--}}
-
-{{--                    <a href="#" class="btn btn-bordered d-block">Register Now</a>--}}
-
-{{--                    <span class="ticket-feature-icon"><i class="fa fa-star"></i></span>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <!-- Start Reg Ticket Price Table #03 -->--}}
-{{--            <div class="col-lg-4 col-md-6 col-sm-9 m-auto m-md-0 ">--}}
-{{--                <div class="registration-ticket-price-item">--}}
-{{--                    <span class="ticket-price">99 <sup>$</sup></span>--}}
-
-{{--                    <h3 class="ticket-plane-name">Pro</h3>--}}
-
-{{--                    <p>Through successfully managing inves for more than aesthete nealson to a professional residential prop.--}}
-{{--                    </p>--}}
-
-{{--                    <a href="#" class="btn btn-bordered d-block">Register Now</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
-<!--== End Event Registration Ticket Area ==-->
-
-<!--== Start Newsletter Area Wrapper ==-->
-<section class="newsletter-area-wrapper bg-offwhite pt-80 pt-sm-60 pb-80 pb-sm-60">
-    <div class="container">
-        <div class="row">
-            <!-- Start Section title -->
-            <div class="col-lg-6 m-auto text-center">
-                <div class="section-title-wrap layout--2 mb-44">
-                    <i class="fa fa-envelope-open-o"></i>
-                    <h2>SUSCRIBIRSE</h2>
-                    <p class="mb-0">Suscribase y reciba actualizaciones de lanzamientos y promociones de la academia.</p>
+    <!--== Start Fun Fact Area Wrapper ==-->
+    <section class="fun-fact-area-wrapper mt-120 mt-md-62 mt-sm-42">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/01.jpg">
+                        <p class="fun-fact-number"><span class="odometer" data-count="4770"></span>
+                        </p>
+                        <h4>Horas de trabajo</h4>
+                    </div>
                 </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/02.jpg">
+                        <p class="fun-fact-number"><span class="odometer" data-count="90"></span>%</p>
+                        <h4>Clientes felices</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/03.jpg">
+                        <p class="fun-fact-number"><span class="odometer" data-count="40"></span>+</p>
+                        <h4>Proyectos realizados</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap bg-img" data-bg="assets/img/home-classic-agency/fun-fact/04.jpg">
+                        <p class="fun-fact-number"><span class="odometer" data-count="129"></span>
+                        </p>
+                        <h4>Tazas de café</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
             </div>
-            <!-- End Section title -->
         </div>
-        <div class="row">
-            <div class="col-lg-7 m-auto">
-                <div class="newsletter-content">
-                    <div class="newsletter-form-wrap layout--2">
-                        <form action="{{route('form_suscripcion_path')}}" method="post" class="mc-form d-sm-flex">
-                            @csrf
-                            <input type="email" name="email"  placeholder="Ingrese su email" required/>
-                            <button class="btn-newsletter" type="submit">Subscribe</button>
-                        </form>
+    </section>
+    <!--== End Fun Fact Area Wrapper ==-->
+
+    <div class="team-hero-area fixed-height parallaxBg bg-img" data-bg="{{asset('images/pizarra.png')}}">
+        <div class="container h-100">
+            <div class="row team-member-item h-100">
+                <div class="col-lg-7 text-center m-auto">
+                    <div class="about-us-content section-title-wrap white mt-70 mt-sm-50">
+                        <i class="fa text-g-green fa-4x fa-microphone"></i>
+                        <h2 class="text-g-green">Green</h2>
+                        <p class="mb-0">Somos GREEN, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA) Nuestra metodología online te permitirá desarrollar todo vuestro potencial y aprender de una manera dinámica.</p>
                     </div>
                 </div>
-
-                @if (session('suscripcion'))
-                    <div class="bg-primary p-3 text-white">
-                        {{ session('suscripcion') }}
-                    </div>
-                @endif
             </div>
         </div>
     </div>
-</section>
-<!--== End Newsletter Area Wrapper ==-->
 
-<!--== Start Contact Area Wrapper ==-->
-<div class="contact-area-wrapper" id="oficinas">
-    <!-- Map Area Wrapper Start  -->
-    <div class="contact-map-area-wrap">
-        <div id="map_content" data-lat="-13.5201395" data-lng="-71.9789297" data-zoom="20"></div>
+
+    <div class="page-wrapper" id="cursos">
+        <!-- Start Portfolio Content Wrapper -->
+        <div class="portfolio-page-content-wrapper fix mt-120 mt-md-80 mt-sm-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Start Portfolio Filterable Menu -->
+                        <div class="portfolio-filter-menu mb-md-50">
+                            <ul class="port-filter-menu nav justify-content-center">
+                                <li class="active" data-filter="*">Todos los cursos</li>
+                                <li data-filter=".grupo-a">Grupos A</li>
+                                <li data-filter=".grupo-b">Grupo B</li>
+                                <li data-filter=".grupo-c">Grupo C</li>
+                                <li data-filter=".grupo-d">Grupo D</li>
+                            </ul>
+                        </div>
+                        <!-- End Portfolio Filterable Menu -->
+
+                        <!-- Start Portfolio Content Wrap -->
+                        <div class="portfolio-content">
+                            <div class="row mtm-30 masonry-grid">
+                                <!-- Single Portfolio Item #01 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/rm.png')}}" alt="Portfolio Image" />
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Aritmética</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <!-- Single Portfolio Item #01 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/algebra.png')}}" alt="Portfolio Image" />
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Algebra</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #02 -->
+                                <div class="col-sm-6 col-lg-2 grupo-b">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/biologia.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Biología</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #03 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b grupo-c grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/comunicacion.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">C. Comunicativa</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #04 -->
+                                <div class="col-sm-6 col-lg-2 grupo-c">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/economia.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Economía</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #05 -->
+                                <div class="col-sm-6 col-lg-2 grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/filosofia.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Filosofía</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #06 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/fisica.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Física</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #07 -->
+                                <div class="col-sm-6 col-lg-2 grupo-c grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/geografia.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Geografía</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #08 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/geometria.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Geo. y Trigo.</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #09 -->
+                                <div class="col-sm-6 col-lg-2 grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/historia.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Historia</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #09 -->
+                                <div class="col-sm-6 col-lg-2 grupo-a grupo-b">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/quimica.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Química</small>
+{{--                                                    <nav class="nav portfolio-cate">--}}
+{{--                                                        <a href="portfolio-details.html">Design</a>--}}
+{{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+{{--                                                    </nav>--}}
+                                                </div>
+
+{{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+{{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <!-- Single Portfolio Item #09 -->
+                                <div class="col-sm-6 col-lg-2 grupo-c grupo-d">
+                                    <div class="single-portfolio-wrap">
+                                        <figure class="portfolio-thumb">
+                                            <img src="{{asset('images/iconos/cursos/circle/rv.png')}}" alt="Portfolio Image" />
+
+                                            <figcaption class="portfolio-details">
+                                                <div class="port-info text-center">
+                                                    <small class="font-weight-bold text-center text-white mx-auto">Psicologia</small>
+                                                    {{--                                                    <nav class="nav portfolio-cate">--}}
+                                                    {{--                                                        <a href="portfolio-details.html">Design</a>--}}
+                                                    {{--                                                        <a href="portfolio-details.html">Photography</a>--}}
+                                                    {{--                                                    </nav>--}}
+                                                </div>
+
+                                                {{--                                                <a href="portfolio-details.html" class="btn-view-work">View Work <i--}}
+
+                                                {{--                                                        class="fa fa-long-arrow-right"></i></a>--}}
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Portfolio Content Wrap -->
+                    </div>
+
+{{--                    <div class="col-12 mt-120 mt-md-80 mt-sm-60">--}}
+{{--                        <!--== Start Pagination Area ==-->--}}
+{{--                        <div class="pagination-content pagination-content-2 bg-offwhite">--}}
+{{--                            <ul class="nav">--}}
+{{--                                <li class="btn-arrow btn-prev mr-auto"><a href="#"><i class="fa fa-angle-left"></i></a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="#" class="active">1</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="#">2</a>--}}
+{{--                                </li>--}}
+{{--                                <li><a href="#">3</a>--}}
+{{--                                </li>--}}
+{{--                                <li class="btn-arrow btn-next ml-auto"><a href="#"><i class="fa fa-angle-right"></i></a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <!--== End Pagination Area ==-->--}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Content Wrapper -->
     </div>
-    <!-- Map Area Wrapper End  -->
 
-    <!-- Contact Information Area Start -->
-    <div class="contact-info-area-wrapper w-100 layout--2">
+
+    <section id="como" class="event-about-area  mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-10 m-auto m-lg-0">
-                    <div class="contact-info-content layout--2">
-                        <a href="index-creative-studio.html">
-                            <img src="{{asset('images/logo-green-edu.png')}}" alt="logo" />
-                        </a>
-
-                        <div class="contact-method mt-30">
-                            <div class="con-method-item">
-                                <p><i class="fa fa-map-marker"></i> Av. El Sol 449 - Cusco - Cusco.</p>
-                            </div>
-
-                            <div class="con-method-item">
-                                <p><i class="fa fa-envelope"></i>  <a href="mailto:your@example.com">green.com.pe@gmail.com</a>
-                                </p>
-                            </div>
-
-                            <div class="con-method-item">
-                                <p><i class="fa fa-phone"></i>  <a href="tel:66668888">951 783 755</a>
-                                </p>
-                            </div>
-
-                            <div class="con-method-item">
-                                <p><i class="fa fa-clock-o"></i> 08:00 - 18:30</p>
-                            </div>
-                        </div>
+                <!-- Start Section title -->
+                <div class="col-lg-8 m-auto text-center">
+                    <div class="section-title-wrap layout--2">
+                        <i class="fa fa-microphone"></i>
+                        <h2>Green</h2>
+                        <p class="mb-0">Somos GREEN, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA) Nuestra metodología online te permitirá desarrollar todo vuestro potencial y aprender de una manera dinámica.</p>
                     </div>
                 </div>
+                <!-- End Section title -->
             </div>
-        </div>
-    </div>
-    <!-- Contact Info Area End -->
-</div>
-<!--== End Contact Area Wrapper ==-->
 
-<!--== Start Footer Area Wrapper ==-->
-<footer class="footer-wrapper">
-    <!-- Start Footer Widget Area -->
-    <div class="footer-widget-wrapper pt-120 pt-md-80 pt-sm-60 pb-116 pb-md-78 pb-sm-60">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <img src="{{asset('images/logo-green-edu.png')}}" alt="" class="w-100">
+            <div class="row">
+                <div class="col-lg-4">
+                    <figure class="welcome-thumbnail">
+                        <img src="{{asset('images/banner-1.jpg')}}" alt="Welcome Image" />
+                    </figure>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer Widget Area -->
 
-    <!-- Start Footer Bottom Area -->
-    <div class="footer-bottom-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-sm-7 order-last">
-                    <div class="footer-copyright-area mt-xs-10 text-center text-sm-left">
-                        <p>Copyright © 2019 GREEN - All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-5 order-first order-sm-last">
-                    <div class="footer-social-icons nav justify-content-center justify-content-md-end">
-                        <a href="#" target="_blank" class="trio-tooltip" data-tippy-content="Facebook"><i class="fa fa-facebook"></i></a>
-{{--                        <a href="#" target="_blank" class="trio-tooltip" data-tippy-content="Twitter"><i class="fa fa-twitter"></i></a>--}}
-{{--                        <a href="#" target="_blank" class="trio-tooltip" data-tippy-content="Pinterest"><i class="fa fa-pinterest"></i></a>--}}
-                        <a href="#" target="_blank" class="trio-tooltip" data-tippy-content="Instagram"><i class="fa fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer Bottom Area -->
-</footer>
-<!--== End Footer Area Wrapper ==-->
+                <div class="col-lg-8">
+                    <div class="welcome-feature mt-sm-32 mt-md-36">
+                        <div class="row">
+                            <!-- Start Single Welcome Feature -->
+                            <div class="col-md-6">
+                                <div class="single-welcome-feature d-flex">
+                                    <div class="feature-icon">
+                                        <img src="https://s3-us-west-1.amazonaws.com/green.com.pe/web/step/plataforma.jpg" alt="" width="70" height="70">
+                                    </div>
 
-<!--== Start Off Canvas Area Wrapper ==-->
-<aside class="off-canvas-area-wrapper">
-    <!-- Off Canvas Overlay -->
-    <div class="off-canvas-overlay"></div>
-
-    <!-- Start Off Canvas Content Area -->
-    <div class="off-canvas-content-wrap">
-        <div class="off-canvas-content">
-            <!-- Start Search Box Wrap -->
-            <div class="search-box-wrap off-canvas-item">
-                <form action="#" method="post">
-                    <input type="search" placeholder="Search.." />
-                    <button class="btn-search"><i class="fa fa-search"></i>
-                    </button>
-                </form>
-            </div>
-
-            <!-- Start About Content Wrap -->
-            <div class="about-content off-canvas-item">
-                <h2>Who We Are</h2>
-                <p>Organic seitan post-ironic, four loko bicycle rights art party tousled. Mlkshk tote bag stumptown.</p>
-            </div>
-
-            <!-- Start Useful Links Content -->
-            <div class="useful-link-wrap off-canvas-item">
-                <h2>Useful Links</h2>
-
-                <ul class="useful-link-menu">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Shop</a>
-                    </li>
-                    <li><a href="#">About Us</a>
-                    </li>
-                    <li><a href="#">Blog</a>
-                    </li>
-                    <li><a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Start Social Links Content -->
-            <div class="social-links-wrap off-canvas-item">
-                <h2>Connect</h2>
-
-                <div class="social-links">
-                    <a href="#" class="trio-tooltip" data-tippy-content="Facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="trio-tooltip" data-tippy-content="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="trio-tooltip" data-tippy-content="Pinterest"><i class="fa fa-pinterest"></i></a>
-                    <a href="#" class="trio-tooltip" data-tippy-content="Instagram"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Off Canvas Close Icon -->
-        <button class="btn-close trio-tooltip" data-tippy-content="Close" data-tippy-placement="left"><i class="fa fa-close"></i>
-        </button>
-    </div>
-    <!-- End Off Canvas Content Area -->
-</aside>
-<!--== End Off Canvas Area Wrapper ==-->
-
-<!--== Start Off Canvas Area Wrapper ==-->
-<aside class="off-canvas-responsive-menu">
-    <!-- Off Canvas Overlay -->
-    <div class="off-canvas-overlay"></div>
-
-    <!-- Start Off Canvas Content Area -->
-    <div class="off-canvas-content-wrap">
-        <div class="off-canvas-content">
-
-        </div>
-        <!-- Off Canvas Close Icon -->
-        <button class="btn-close trio-tooltip" data-tippy-content="Close" data-tippy-placement="right"><i class="fa fa-close"></i>
-        </button>
-    </div>
-    <!-- End Off Canvas Content Area -->
-</aside>
-<!--== End Off Canvas Area Wrapper ==-->
-
-<!--== Start Off Canvas Area Wrapper ==-->
-<aside class="off-canvas-search-box">
-    <!-- Off Canvas Overlay -->
-    <div class="off-canvas-overlay"></div>
-
-    <!--== Start Search Box Area ==-->
-    <div class="search-box-wrapper text-center">
-        <div class="search-box-content">
-            <form action="#" method="post">
-                <input type="search" placeholder="Search" />
-                <button class="btn-search"><i class="fa fa-search"></i>
-                </button>
-            </form>
-        </div>
-    </div>
-    <!--== End Search Box Area ==-->
-</aside>
-<!--== End Off Canvas Area Wrapper ==-->
-
-<!--=== Start Quick View Content Wrapper ==-->
-<div class="modal fade" id="quick-view">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="quick-view-content-wrap">
-                    <div class="row">
-                        <!-- Start Product Thumbnail Area -->
-                        <div class="col-md-6">
-                            <div class="product-thumb-area">
-                                <div class="ht-slick-slider dots-style-three prod-thumb-inner" data-slick='{"slidesToShow": 1, "infinite": false, "dots": true}'>
-                                    <figure class="port-details-thumb-item">
-                                        <img src="assets/img/home-christmas/products/product_05.jpg" alt="product" />
-                                    </figure>
-                                    <figure class="port-details-thumb-item">
-                                        <img src="assets/img/home-christmas/products/product_02.jpg" alt="product" />
-                                    </figure>
-                                    <figure class="port-details-thumb-item">
-                                        <img src="assets/img/home-christmas/products/product_03.jpg" alt="product" />
-                                    </figure>
+                                    <div class="feature-info">
+                                        <h3>Plataforma responsive:</h3>
+                                        <p>Laptop, Celular, Tableta, Desktop, incluso Smart TV.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- End Single Welcome Feature -->
+
+                            <!-- Start Single Welcome Feature -->
+                            <div class="col-md-6">
+                                <div class="single-welcome-feature d-flex">
+                                    <div class="feature-icon">
+                                        <img src="https://s3-us-west-1.amazonaws.com/green.com.pe/web/step/clases.jpg" alt="" width="70" height="70">
+                                    </div>
+                                    <div class="feature-info">
+                                        <h3>Clases 100% Dinámicas</h3>
+                                        <p>Teoría y Ejercicios de forma entretenida.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Welcome Feature -->
+
+                            <!-- Start Single Welcome Feature -->
+                            <div class="col-md-6">
+                                <div class="single-welcome-feature d-flex">
+                                    <div class="feature-icon">
+                                        <img src="https://s3-us-west-1.amazonaws.com/green.com.pe/web/step/modulo.jpg" alt="" width="70" height="70">
+                                    </div>
+
+                                    <div class="feature-info">
+                                        <h3>Modulo completo x Curso</h3>
+                                        <p>Desarrollo de todo el temario.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Welcome Feature -->
+
+                            <!-- Start Single Welcome Feature -->
+                            <div class="col-md-6">
+                                <div class="single-welcome-feature d-flex">
+                                    <div class="feature-icon">
+                                        <img src="https://s3-us-west-1.amazonaws.com/green.com.pe/web/step/asesoria.jpg" alt="" width="70" height="70">
+                                    </div>
+
+                                    <div class="feature-info">
+                                        <h3>Asesoría Personalizada</h3>
+                                        <p>Contacto directo con profesores, incluyendo Asesorías.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Welcome Feature -->
+
+                            <!-- Start Single Welcome Feature -->
+                            <div class="col-md-6">
+                                <div class="single-welcome-feature d-flex">
+                                    <div class="feature-icon">
+                                        <img src="https://s3-us-west-1.amazonaws.com/green.com.pe/web/step/evaluaciones.jpg" alt="" width="70" height="70">
+                                    </div>
+
+                                    <div class="feature-info">
+                                        <h3>Evaluaciones</h3>
+                                        <p>Simulacros de Exámenes de Admisión.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Welcome Feature -->
+
                         </div>
-                        <!-- End Product Thumbnail Area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Start Product Info Area -->
-                        <div class="col-md-6">
-                            <div class="product-details-info-content-wrap niceScroll-wrap">
-                                <div class="prod-details-info-content niceScroll-content">
-                                    <h2>Lamp Shade</h2>
-                                    <div class="price-group">
-                                        <span class="price">$9.99</span>
+    <section id="faq">
+        <div class="accordion-content-wrapper mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
+            <div class="container">
+                <div class="row mb-5">
+                    <!-- Start Section title -->
+                    <div class="col-lg-6 m-auto text-center">
+                        <div class="section-title-wrap layout--2">
+                            <i class="fa fa-list"></i>
+                            <h2>Preguntas Frecuentes</h2>
+                        </div>
+                    </div>
+                    <!-- End Section title -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+                        <!-- Start Accordion Element #01 -->
+                        <div class="accordion-element-1">
+                            <div class="restaurant-why-us-accordion" id="accordionOne">
+                                <!-- Start Accordion item #01 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+
+                                            <span>01.</span> ¿Cómo puedo inscribirme?
+
+                                        </h3>
                                     </div>
 
-                                    <p>Created from either wood or recycled materials, it can be moulded into just about any shape and hardens to provide a hard shell. Additives can make it water resistant.
-                                    </p>
-
-                                    <div class="product-action mt-38 mb-20">
-                                        <div class="action-top mb-40">
-                                            <div class="pro-qty mr-10">
-                                                <input type="text" id="quantity" title="Quantity" value="1" />
-                                            </div>
-                                            <button class="btn btn-brand">Add to Cart</button>
-                                        </div>
-
-                                        <button class="btn-wishlist trio-tooltip" data-tippy-content="Add to Wishlist">
-                                            <i class="fa fa-heart-o"></i>Add to Wishlist
-                                        </button>
-                                    </div>
-
-                                    <div class="port-details-con-inner">
-                                        <div class="single-post-details__footer m-0">
-                                            <div class="single-post-details__footer__item">
-                                                <div class="footer-item-left">
-                                                    <h5 class="item-head"><i class="fa fa-tags"></i> Categories:</h5>
-                                                </div>
-                                                <div class="footer-item-right">
-                                                    <ul class="cate-list nav">
-                                                        <li><a href="#">Design</a>
-                                                        </li>
-                                                        <li><a href="#">Interior</a>
-                                                        </li>
-                                                        <li><a href="#">Multi</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="single-post-details__footer__item">
-                                                <div class="footer-item-left">
-                                                    <h5 class="item-head"><i class="fa fa-share-alt"></i> Share:</h5>
-                                                </div>
-
-                                                <div class="footer-item-right">
-                                                    <div class="share-item">
-                                                        <a href="#" class="trio-tooltip" data-tippy-content="Share On Facebook"><i
-
-                                                                class="fa fa-facebook"></i></a>
-                                                        <a href="#" class="trio-tooltip" data-tippy-content="Share On Twitter"><i
-
-                                                                class="fa fa-twitter"></i></a>
-                                                        <a href="#" class="trio-tooltip" data-tippy-content="Share On Google Plus"><i
-
-                                                                class="fa fa-google-plus"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Contáctanos vía whatsapp de 8am a 8pm para que un representante pueda asistirte o también te invitamos a visitarnos en nuestra sede central en Cusco.</p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Start Accordion item #02 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h3 data-toggle="collapse" data-target="#collapseTwo">
+
+                                            <span>02.</span>¿Que grupos enseñamos?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Actualmente abarcamos todos los grupos A-B-C-D (UNSAAC)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #03 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h3 data-toggle="collapse" data-target="#collapseThree">
+
+                                            <span>03.</span> ¿Cuales son los horarios?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Las clases son desde 8.30am a 6.00pm.
+                                                Al cambiar los horarios cada semestre solicitamos por favor contactar a vuestro asesor educativo GREEN para obtener el horario mas actualizado según vuestro grupo. (999 200 117).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #04 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 04.</span> ¿Cuales son los costos?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>S/99 soles mensuales y también contamos con una promoción x tiempo limitado: 2x3 : paga 2 meses y estudia 3 meses, abonando S/198 podrás acceder a 3 meses de clases.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #05 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 05.</span> Cómo funcionan las clases
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Vía online; nuestros estudiantes reciben los accesos respectivos de nuestras clases en vivo las cuales se desarrollan desde nuestra sede central.
+                                                Igualmente brindamos ejercicios y exámenes simulacros de admisión.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #06 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 06.</span> ¿Cuentan con primera opción?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Por el momento solo Ordinario.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #07 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 07.</span> ¿Hay un acompañamiento fuera de las clases sobre los temas vistos?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>A cada alumno se le asignará un asesor el cual realizará un acompañamiento personalizado tanto con el estudiante como con sus padres.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #08 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 08.</span> En caso de perder una clase por x motivo. ¿Tengo opción a recuperarla? Si es así, ¿mediante qué medio?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Afirmativo, si un estudiante pierde una clase deberá contactar a su asesor para solicitar el acceso de la clase a recuperar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #09 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 09.</span> ¿Cuál debería ser mi calidad de conexión a internet?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>velocidad que permita ver videos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #10 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 10.</span> Las dudas al profesor, aparte de las clases en vivo; ¿por donde puedo resolverlas?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Cada profesor cuenta con horas de atención para consultas por favor coordinar con su Asesor la comunicación con el profesor deseado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #11 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 11.</span> ¿Cuanto duran las clases?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>El ciclo dura 3 meses.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Accordion item #12 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h3 data-toggle="collapse" data-target="#collapseFour">
+
+                                            <span> 12.</span> ¿Existen descuentos para miembros de una misma familia?
+
+                                        </h3>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionOne">
+                                        <div class="card-body">
+                                            <p>Afirmativo, por favor contáctanos para una cotización personalizada.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
-                        <!-- End Product Info Area -->
+                        <!-- End Accordion Element #01 -->
+
                     </div>
                 </div>
             </div>
+    </section>
 
-            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-            </button>
-        </div>
-    </div>
-</div>
-<!--=== End Quick View Content Wrapper ==-->
-
-<!--=======================Javascript============================-->
-<!--=== All Vendor Js ===-->
-<script src="{{asset('assets/js/vendor.js')}}"></script>
-<!--=== All Plugins Js ===-->
-<script src="{{asset('assets/js/plugins.js')}}"></script>
-<!--=== Active Js ===-->
-<script src="{{asset('assets/js/active.js')}}"></script>
-
-<!--=== Revolution Slider Js ===-->
-<script src="{{asset('assets/js/revslider/jquery.themepunch.tools.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/jquery.themepunch.revolution.min.js')}}"></script>
-
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.actions.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.carousel.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.kenburn.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.migration.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.navigation.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.parallax.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.slideanims.min.js')}}"></script>
-<script src="{{asset('assets/js/revslider/extensions/revolution.extension.video.min.js')}}"></script>
-
-
-<script src="{{asset('assets/js/revslider/revslider-active.js')}}"></script>
-</body>
-
-</html>
+@endsection

@@ -24,9 +24,9 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $request->user()->authorizeRoles(['user', 'admin']);
+        $request->user()->authorizeRoles(['admin']);
 
-        $alumno = TAlumno::all()->sortByDesc('created_at');
+        $alumno = TAlumno::where('evento', 'septiembre')->get();
 
         return view('home', compact('alumno'));
     }

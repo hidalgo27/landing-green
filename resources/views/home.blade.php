@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Alumnos para el 03 de agosto | Gratis</div>
+                <div class="card-header">Alumnos 28 de septiembre | Gratis</div>
 
                 <div class="card-body">
                     @if (session('status'))

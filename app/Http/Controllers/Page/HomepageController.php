@@ -11,6 +11,11 @@ class HomepageController extends Controller
     public function index(){
         return view('page.home');
     }
+
+    public function agosto_2020(){
+        return view('page.agosto-home');
+    }
+
     public function form_free(Request $request){
 
         $validatedData = $request->validate([
@@ -21,12 +26,12 @@ class HomepageController extends Controller
         $alumnos->nombre = $request->input('name');
         $alumnos->email = $request->input('email');
         $alumnos->telefono = $request->input('cel');
-        $alumnos->evento = '03 agosto gratis';
+        $alumnos->evento = 'septiembre';
         $alumnos->grupo = $request->input('grupo');
         $alumnos->estado = '1';
         $alumnos->save();
 
-        return redirect(route('home_path'))->with('status', 'Registro satisfactorio.');
+        return redirect(route('agosto_2020_path'))->with('status', 'Registro satisfactorio.');
 
 //        return view('page.home')->with('status', 'Successfully updated video');;
     }
@@ -46,8 +51,11 @@ class HomepageController extends Controller
 
 
     public function list_group(){
-        $alumno = TAlumno::all();
+        $alumno = TAlumno::where('evento', 'septiembre')->get();
         return view('page.list-group', compact('alumno'));
     }
 
+    public function ecuesta_set(){
+        return view('page.encuesta-1');
+    }
 }

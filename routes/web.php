@@ -17,10 +17,15 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-//page
 Route::get('/', [
     'uses' => 'Page\HomepageController@index',
     'as' => 'home_path',
+]);
+
+//page
+Route::get('/septiembre-2020', [
+    'uses' => 'Page\HomepageController@agosto_2020',
+    'as' => 'agosto_2020_path',
 ]);
 
 Auth::routes();
@@ -48,4 +53,11 @@ Route::post('form/suscripcion', [
 Route::get('/list-group', [
     'uses' => 'Page\HomepageController@list_group',
     'as' => 'list_group_path',
+]);
+
+
+//page
+Route::get('/encuentas/set', [
+    'uses' => 'Page\HomepageController@ecuesta_set',
+    'as' => 'ecuesta_set_path',
 ]);
