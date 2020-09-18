@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Academia Pre Universitaria Green. Inicio de clases 03 de agosto. 15 días gratis.">
+    <meta name="description" content="Somos GREEN ACADEMIA, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA).">
 
-    <title>Green Academia Pre | 03 agosto</title>
+    <title>Green Academia Pre | 28 de septiembre</title>
 
     <!--=== Favicon ===-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -112,6 +112,7 @@
                     <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
                     <h2>Inicio 28 de Septiembre <span class="d-block">Semana gratis</span></h2>
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
+                    <p class="text-g-green">También tu registro sirve para el sorteo y examen de Becas</p>
 {{--                    <div class="single-fun-fact-wrap layout--2 text-white">--}}
 {{--                        <span>Faltan</span>--}}
 {{--                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>--}}
@@ -146,7 +147,7 @@
                 @endif
 
                 <div class="event-registration-wrapper py-5 text-center mt-sm-50">
-                    <h3 class="mb-0">Registrarse para clases gratis</h3>
+                    <h3 class="mb-0">Registrarse para clases gratis, examen y sorteo de becas</h3>
                     <span class="text-center py-3 d-block">Sin trucos, sin pagos</span>
 
                     <div class="registration-form">
@@ -183,7 +184,7 @@
                         </form>
                     </div>
                     <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
-                        Si deseas inscribirte en ese momento el costo sera de S/99 mensuales o S/149 x 2 meses </small>
+                        Si deseas inscribirte en ese momento el costo sera de S/89 mensuales o S/179 x 3 meses </small>
                 </div>
             </div>
         </div>
