@@ -3549,13 +3549,14 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
 
 @media only screen and (max-width: 767.98px) {
     .testimonial-area {
-        padding: 60px 0;
+        padding: 60px 0 0;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .testimonial-area {
-        padding: 80px 0;
+        padding: 80px 0 0;
+        
     }
 }
 
