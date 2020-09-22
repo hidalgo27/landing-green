@@ -4,12 +4,14 @@ namespace App\Http\Controllers\Page;
 
 use App\Http\Controllers\Controller;
 use App\TAlumno;
+use App\TDocente;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
     public function index(){
-        return view('page.home');
+        $docente = TDocente::all()->sortBy('orden');
+        return view('page.home', compact('docente'));
     }
 
     public function agosto_2020(){
@@ -58,4 +60,5 @@ class HomepageController extends Controller
     public function ecuesta_set(){
         return view('page.encuesta-1');
     }
+
 }

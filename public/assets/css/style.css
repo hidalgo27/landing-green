@@ -3544,7 +3544,7 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
 11. Start Testimonial Area Wrapper
 ===================================*/
 .testimonial-area {
-    padding: 120px 0;
+    padding: 120px 0 0;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -3604,8 +3604,8 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
 
 .single-testimonial-wrap .author-thumb img {
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 250px;
+    width: 250px;
 }
 
 .single-testimonial-wrap.layout--2 {
@@ -3788,9 +3788,11 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
     margin-top: 15px;
     text-transform: capitalize;
 }
-
+.d-curso{
+    width: 50px !important;
+}
 .single-testimonial-wrap.layout--4.slick-slide {
-    padding: 100px 15px;
+    padding: 50px 15px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {

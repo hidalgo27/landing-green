@@ -36,6 +36,8 @@
                                 <ul class="main-menu nav landing-nav justify-content-end">
                                     <li><a href="#cursos">Cursos</a>
                                     </li>
+                                    <li><a href="#docentes">Docentes</a>
+                                    </li>
                                     <li><a href="#faq">Preguntas Frecuentes</a>
                                     </li>
                                     <li><a href="#oficina">Oficina</a>
@@ -704,6 +706,51 @@
             </div>
         </div>
     </section>
+
+
+    <section id="docentes">
+        <div class="container">
+            <div class="row">
+                <!-- Start Section title -->
+                <div class="col-lg-8 m-auto text-center">
+                    <div class="section-title-wrap layout--2">
+                        <i class="fa fa-microphone"></i>
+                        <h2>Plana Docente</h2>
+                        {{--                        <p class="mb-0">Somos GREEN, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA) Nuestra metodología online te permitirá desarrollar todo vuestro potencial y aprender de una manera dinámica.</p>--}}
+                    </div>
+                </div>
+                <!-- End Section title -->
+            </div>
+        </div>
+    </section>
+    <section id="landing-testimonial" class="testimonial-area showcase-layout  bg-img" data-bg="{{asset('images/galaxy.jpg')}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial-content-wrap">
+                        <div class="ht-slick-slider dots-style-two" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "adaptiveHeight": true, "dots": true, "centerMode": true, "centerPadding": 0, "responsive": [{"breakpoint": 991,"settings": {"slidesToShow": 1}}] }'>
+
+                            @foreach($docente as $docentes)
+                            <div class="single-testimonial-wrap layout--4">
+                                <figure class="author-thumb">
+                                    <img src="{{$docentes->imagen}}" alt="Testimonial" />
+                                </figure>
+{{--                                <p>This is absolutely the best theme I have ever used. The design quality is exquisite. Their response time is unheard of.</p>--}}
+                                <h3 class="client-name">{{$docentes->nombre}} <span class="client-designation">{{$docentes->curso}}</span>
+                                </h3>
+                                <img src="{{$docentes->imagen_d}}" alt="" class="d-curso mx-auto pt-2">
+                            </div>
+                            @endforeach
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{{asset('images/docentes/plana.png')}}" alt="" class="w-100">
+    </section>
+
+
 
     <section id="faq">
         <div class="accordion-content-wrapper mt-120 mt-md-80 mt-sm-60 mb-120 mb-md-80 mb-sm-60">
