@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Alumnos 28 de septiembre | Gratis</div>
 
@@ -24,6 +24,7 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Celular</th>
                                 <th scope="col">Grupo</th>
+                                <th scope="col">Registro</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -35,6 +36,7 @@
                                 <td>{{$alumnos->email}}</td>
                                 <td>{{$alumnos->telefono}}</td>
                                 <td>{{$alumnos->grupo}}</td>
+                                <td>{{$alumnos->created_at}}</td>
                             </tr>
                             @php $i++ @endphp
                             @endforeach
