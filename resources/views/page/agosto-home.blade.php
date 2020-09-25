@@ -110,7 +110,7 @@
                 <!-- Start Hero Banner Content -->
                 <div class="hero-content-wrap text-center text-md-left landing-nav rgba-black-5 p-5 rounded">
                     <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
-                    <h2>Inicio 28 de Septiembre <span class="d-block">Semana gratis</span></h2>
+                    <h2>Inicio 12 de Octubre <span class="d-block">Semana gratis</span></h2>
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
                     <p class="text-g-green">También tu registro sirve para el sorteo y examen de Becas</p>
 {{--                    <div class="single-fun-fact-wrap layout--2 text-white">--}}

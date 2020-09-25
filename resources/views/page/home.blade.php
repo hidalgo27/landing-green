@@ -99,7 +99,7 @@
                         <div class="tp-caption poppins-16-400   tp-resizeme" id="slide-39-layer-2" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['150','40','40','110']" data-width="['600','670','670','420']"
                              data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":2530,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                              data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 670px; max-width: 670px; white-space: normal; color: rgba(255,255,255,1);">
-                            <span class="font-weight-bold h5 text-white">Inicio de clases 28 de septiembre</span>
+                            <span class="font-weight-bold h5 text-white">Inicio de clases 12 de octubre</span>
                         </div>
 
 {{--                        <!-- LAYER NR. 5 -->--}}
