@@ -28,6 +28,11 @@ Route::get('/octubre-2020', [
     'as' => 'agosto_2020_path',
 ]);
 
+Route::get('/septiembre-2020', [
+    'uses' => 'Page\HomepageController@agosto_2020',
+    'as' => 'agosto_2020_path',
+]);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
