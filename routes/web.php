@@ -23,7 +23,7 @@ Route::get('/', [
 ]);
 
 //page
-Route::get('/septiembre-2020', [
+Route::get('/octubre-2020', [
     'uses' => 'Page\HomepageController@agosto_2020',
     'as' => 'agosto_2020_path',
 ]);
