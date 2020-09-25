@@ -183,7 +183,7 @@
                             </div>
                         </form>
                     </div>
-                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 15 días tu eliges si deseas inscribirte o no.
+                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 7 días tu eliges si deseas inscribirte o no.
                         Si deseas inscribirte en ese momento el costo sera de S/89 mensuales o S/179 x 3 meses </small>
                 </div>
             </div>
