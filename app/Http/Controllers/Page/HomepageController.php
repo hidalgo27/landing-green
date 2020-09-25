@@ -15,7 +15,8 @@ class HomepageController extends Controller
     }
 
     public function agosto_2020(){
-        return view('page.agosto-home');
+        $docente = TDocente::all()->sortBy('orden');
+        return view('page.agosto-home', compact('docente'));
     }
 
     public function form_free(Request $request){
