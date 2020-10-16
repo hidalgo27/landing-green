@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\TAlumno;
+use App\TCepru;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,7 +27,7 @@ class HomeController extends Controller
     {
         $request->user()->authorizeRoles(['admin']);
 
-        $alumno = TAlumno::where('evento', 'cepru')->get();
+        $alumno = TCepru::where('evento', 'cepru')->get();
 
         return view('home', compact('alumno'));
     }
