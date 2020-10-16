@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Alumnos 28 de septiembre | Gratis</div>
+                <div class="card-header">Alumnos CEPRU | Gratis</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -20,6 +20,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">Cod. CEPRU</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Celular</th>
@@ -32,6 +33,7 @@
                             @foreach($alumno as $alumnos)
                             <tr>
                                 <th scope="row">{{$i}}</th>
+                                <td>{{$alumnos->cepru}}</td>
                                 <td>{{$alumnos->nombre}}</td>
                                 <td>{{$alumnos->email}}</td>
                                 <td>{{$alumnos->telefono}}</td>

@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $request->user()->authorizeRoles(['admin']);
 
-        $alumno = TAlumno::where('grupo', 'D')->get();
+        $alumno = TAlumno::where('evento', 'cepru')->get();
 
         return view('home', compact('alumno'));
     }

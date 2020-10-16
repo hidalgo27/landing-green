@@ -56,7 +56,7 @@ class HomepageController extends Controller
 
 
     public function list_group(){
-        $alumno = TAlumno::where('evento', 'septiembre')->get();
+        $alumno = TAlumno::where('evento', 'cepru')->get();
         return view('page.list-group', compact('alumno'));
     }
 
