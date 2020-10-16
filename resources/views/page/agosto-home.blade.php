@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Somos GREEN ACADEMIA, una institución educativa enfocada en prepararte para que obtengas un alto puntaje en las pruebas de Admisión (UNSAAC y ANDINA).">
 
-    <title>Green Academia Pre | 21 de octubre</title>
+    <title>Green Academia Pre | CEPRU</title>
 
     <!--=== Favicon ===-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -110,9 +110,9 @@
                 <!-- Start Hero Banner Content -->
                 <div class="hero-content-wrap text-center text-md-left landing-nav rgba-black-5 p-5 rounded">
                     <span class="h2 font-weight-light text-g-green">PRE UNSAAC</span>
-                    <h2>Inicio 12 de Octubre <span class="d-block">Semana gratis</span></h2>
+                    <h2>REFORZAMIENTO CEPRU <span class="d-block">Clases gratiutas</span></h2>
                     <p>Registrese para poder acceder a nuestras clases totalmente gratis.</p>
-                    <p class="text-g-green">También tu registro sirve para el sorteo y examen de Becas</p>
+{{--                    <p class="text-g-green">También tu registro sirve para el sorteo y examen de Becas</p>--}}
 {{--                    <div class="single-fun-fact-wrap layout--2 text-white">--}}
 {{--                        <span>Faltan</span>--}}
 {{--                        <p class="fun-fact-number"><span class="odometer text-white" data-count="3"></span>--}}
@@ -120,11 +120,11 @@
 {{--                        </p>--}}
 
 {{--                    </div>--}}
-                    <ul>
-                        <li>
-                            <a href="#clases" class="btn btn-bordered">Mas información</a>
-                        </li>
-                    </ul>
+{{--                    <ul>--}}
+{{--                        <li>--}}
+{{--                            <a href="#clases" class="btn btn-bordered">Mas información</a>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
                 </div>
             </div>
 
@@ -147,7 +147,7 @@
                 @endif
 
                 <div class="event-registration-wrapper py-5 text-center mt-sm-50">
-                    <h3 class="mb-0">Registrarse para clases gratis, examen y sorteo de becas</h3>
+                    <h3 class="mb-0">Registrarse para clases gratis</h3>
                     <span class="text-center py-3 d-block">Sin trucos, sin pagos</span>
 
                     <div class="registration-form">
@@ -155,6 +155,10 @@
 
                         <form action="{{route('form_free_path')}}" method="post">
                             @csrf
+                            <div class="single-input-item">
+                                <input type="text" name="cepru" placeholder="Código CEPRU" required/>
+                            </div>
+
                             <div class="single-input-item">
                                 <input type="text" name="name" placeholder="Nombre Completo" required/>
                             </div>
@@ -183,8 +187,8 @@
                             </div>
                         </form>
                     </div>
-                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 7 días tu eliges si deseas inscribirte o no.
-                        Si deseas inscribirte en ese momento el costo sera de S/89 mensuales o S/179 x 3 meses </small>
+{{--                    <small>En GREEN estamos tan seguros de nuestra calidad de clases que te invitamos a probarnos sin compromiso; al final de los 7 días tu eliges si deseas inscribirte o no.--}}
+{{--                        Si deseas inscribirte en ese momento el costo sera de S/89 mensuales o S/179 x 3 meses </small>--}}
                 </div>
             </div>
         </div>
@@ -341,7 +345,7 @@
             <div class="col-lg-6 m-auto">
                 <!-- Start Event About Thumbnail Area -->
                 <figure class="event-about-thumb mb-sm-30 mb-md-30">
-                    <img src="{{asset('images/dos.png')}}" alt="Event About" />
+                    <img src="{{asset('images/cepru.jpg')}}" alt="Event About" />
                 </figure>
 
 

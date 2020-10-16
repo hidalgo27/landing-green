@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Page;
 
 use App\Http\Controllers\Controller;
 use App\TAlumno;
+use App\TCepru;
 use App\TDocente;
 use Illuminate\Http\Request;
 
@@ -22,19 +23,20 @@ class HomepageController extends Controller
     public function form_free(Request $request){
 
         $validatedData = $request->validate([
-            'email' => 'required|unique:talumnos',
+            'email' => 'required|unique:tcepru',
         ]);
 
-        $alumnos = new TAlumno();
+        $alumnos = new TCepru();
+        $alumnos->cepru = $request->input('cepru');
         $alumnos->nombre = $request->input('name');
         $alumnos->email = $request->input('email');
         $alumnos->telefono = $request->input('cel');
-        $alumnos->evento = 'septiembre';
+        $alumnos->evento = 'cepru';
         $alumnos->grupo = $request->input('grupo');
         $alumnos->estado = '1';
         $alumnos->save();
 
-        return redirect(route('agosto_2020_path'))->with('status', 'Registro satisfactorio.');
+        return redirect(route('cepru_2020_path'))->with('status', 'Registro satisfactorio.');
 
 //        return view('page.home')->with('status', 'Successfully updated video');;
     }

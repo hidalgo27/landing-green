@@ -93,13 +93,13 @@
                         <div class="tp-caption   tp-resizeme" id="slide-31-layer-3" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['-80','-200','-200','-140']" data-fontsize="['110','110','110','40']"
                              data-lineheight="['120','60','100','60']" data-width="['670','670','670','420']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1740,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: nowrap; font-size: 90px; line-height: 110px; font-weight: 700; color: rgba(255,255,255,1);letter-spacing:0">
-                             <span class="text-g-green">CICLO PRIMERA OPCIÓN</span>
+                             <span class="text-g-green">REPASO CEPRU</span>
                         </div>
 
                         <div class="tp-caption poppins-16-400   tp-resizeme" id="slide-39-layer-2" data-x="['center','left','left','left']" data-hoffset="['320','80','80','80']" data-y="['middle','middle','middle','middle']" data-voffset="['150','40','40','110']" data-width="['600','670','670','420']"
                              data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":2530,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                              data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 670px; max-width: 670px; white-space: normal; color: rgba(255,255,255,1);">
-                            <span class="font-weight-bold h5 text-white">Inicio de clases 12 de octubre</span>
+                            <span class="font-weight-bold h5 text-white">Regístrese para las clases Gratuitas</span>
                         </div>
 
 {{--                        <!-- LAYER NR. 5 -->--}}
@@ -110,10 +110,10 @@
 {{--                        </div>--}}
 
                         <!-- LAYER NR. 7 -->
-                        <a href="{{route('agosto_2020_path')}}" class="tp-caption rev-btn " id="slide-31-layer-5" data-x="['center','center','center','center']" data-hoffset="['140','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['250','176','176','42']" data-width="none" data-height="none"
+                        <a href="{{route('cepru_2020_path')}}" class="tp-caption rev-btn " id="slide-31-layer-5" data-x="['center','center','center','center']" data-hoffset="['140','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['250','176','176','42']" data-width="none" data-height="none"
                              data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1200,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(31,31,31,1);bc:rgba(31,31,31,1);"}]'
                              data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[21,21,21,21]" data-paddingright="[30,30,30,30]" data-paddingbottom="[21,21,21,21]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 600; color: rgba(31,31,31,1);background-color:#aeea00;border-color:#aeea00;border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                            QUIERO REGISTRARME
+                            REGISTRARME AHORA
                         </a>
                     </li>
 
